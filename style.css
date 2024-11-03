@@ -1,0 +1,217 @@
+
+*{
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.bgImgHead{
+    background-image: url("./images/Navbar/bgImg.png");
+  
+}
+.Bluetx{
+    color: #8156D9;
+}
+.Bluetx1{
+color: #743A91;
+}
+.Bluetx2{
+    color: #AF52DE;
+    }
+.nvideaSpac{
+    display: flex;
+    flex-direction: column;
+}
+.GridAchiv{
+    background-image: url("./images/Arch/grid.png");
+}
+.arch{
+    background-image: url("./images/Arch/ArchGrid.png");
+}
+.txSize{
+    width: 80%;
+}
+.txSize2{
+    width: 70%;
+}
+.txSize3{
+    width: 50%;
+}
+.txSize5{
+    width: 53%;
+}
+.txSize6{
+    width: 37%;
+}
+
+.txSize4{
+    width: 87%;
+}
+.gridIMG{
+    background-image: url("./images/Arch/ArchSystem.png");
+}
+.machine{
+    background-image: url("./images/MidWave.png");
+}
+.ready{
+    background-image: url("./images/systemGrid.png");
+    background-size: cover;
+}
+.gridFull{
+    background-image: url("./images/ready1.png");
+    background-size: cover;
+    /* background-position: center; */
+}
+.marjin{
+    height: 800px;
+}
+.modernWay {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
+ .modernWay2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
+ .lineGrid{
+    background-image: url("./images/Arch/ArchGrid.png");
+    background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+z-index: 999;
+
+
+ }
+ #valueServers{
+    background-image: url("./images/Arch/archSe.png");
+    background-position: bottom;
+    background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+z-index: 8;
+ }
+ #boxColour{
+    background-image: url("./images/Arch/ArchSec.jpg");
+    background-size: auto;
+background-repeat: no-repeat;
+position: relative;
+z-index: 14;
+ }
+.spacing{
+    padding-top: 100px;
+    padding-bottom: 110px;
+
+}
+.spacing1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("./images/Arch/ArchGrid.png");
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 2;
+  }
+  #backGround{
+    background-image: url("./images/Arch/newBg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: bottom;
+  
+}
+
+
+ /* Achievements Section */
+.achievements-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .achievements {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .achievement {
+    background: linear-gradient(135deg, #6633cc, #9933ff);
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    width: 100px;
+  }
+  
+  /* Conversation Section */
+  .conversation-section {
+    position: relative;
+    padding: 50px;
+    color: #fff;
+    background-color: #6633cc;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background-wave.png');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content h2 span {
+    color: #ff66cc;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6633cc;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .images img {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+  }
+  .visi{
+    visibility: visible;
+  }
+  .invisi{
+    visibility: hidden;
+  }
