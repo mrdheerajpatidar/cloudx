@@ -1,13 +1,295 @@
 
 *{
   color: white;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 html {
   scroll-behavior: smooth;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.openText{
+    font-family: "Open Sans";
+    font-optical-sizing: auto;
+    font-style: normal;  
+}
+.poppin{
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+}
+.poppin1{
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+}
+.montserrat{
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+}
+.montserrat1{
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat2{
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat3{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@media (max-width: 640px) {
+  .fontSize12 {
+    font-size: 12px; /* Font size for small to medium screens (sm) */
+  }
+  .fontSize10{
+    font-size: 10px;
+  }
+  
+  .fontSize14{
+    font-size: 10px;
+  }
+  .fontSize16{
+    font-size: 16px;
+  }
+  .fontSize18 {
+    font-size: 18px;
+  }
+  .fontSize20{
+    font-size: 20px;
+  }
+  .fontSize24{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .fontSize30 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .txSize{
+    width: 100%;
+  }
+  .txSize1{
+    width: 90%;
+  }
+  .txSize2{
+    width: 60%;
+  }
+  .txSize3{
+    width: 50%;
+  }
+  .txSize4{
+    width: 87%;
+  }
+  .txSize5{
+    width: 53%;
+  }
+  .txSize6{
+    width: 37%;
+  }
+  .txSize7{
+    width: 58%;
+  }
+  .txSize8{
+    width: 30%;
+  }
+}
+
+@media (min-width: 641px) {
+  .fontSize12 {
+    font-size: 15px; /* Font size for medium screens (md) */
+  }
+  .fontSize10 {
+    font-size: 12px;
+  }
+
+  .fontSize14 {
+    font-size: 15px;
+  }
+
+  .fontSize16 {
+    font-size: 18px;
+  }
+  .fontSize18 {
+    font-size: 20px;
+  }
+
+  .fontSize20 {
+    font-size: 22px;
+  }
+
+  .fontSize24 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .fontSize30 {
+    font-size: 54px;
+    line-height: 65px;
+  }
+  .txSize{
+    width: 90%;
+  }
+  .txSize1{
+    width: 80%;
+  }
+  .txSize2{
+    width: 85%;
+  }
+  .txSize3{
+    width: 50%;
+  }
+  .txSize4{
+    width: 87%;
+  }
+  .txSize5{
+    width: 53%;
+  }
+  .txSize6{
+    width: 37%;
+  }
+  .txSize7{
+    width: 58%;
+  }
+  .txSize8{
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fontSize12 {
+    font-size: 17px; /* Font size for large screens (lg) */
+  }
+  .fontSize10 {
+    font-size: 14px;
+  }
+
+  .fontSize14 {
+    font-size: 19px;
+  }
+
+  .fontSize16 {
+    font-size: 20px;
+  }
+  .fontSize18 {
+    font-size: 22px;
+  }
+
+  .fontSize20 {
+    font-size: 24px;
+  }
+
+  .fontSize24 {
+    font-size: 33px;
+  }
+
+  .fontSize30 {
+    font-size: 70px;
+  }
+  .txSize{
+    width: 90%;
+  }
+  .txSize1{
+    width: 80%;
+  }
+  .txSize2{
+    width: 81%;
+  }
+  .txSize3{
+    width: 50%;
+  }
+  .txSize4{
+    width: 87%;
+  }
+  .txSize5{
+    width: 53%;
+  }
+  .txSize6{
+    width: 37%;
+  }
+  .txSize7{
+    width: 58%;
+  }
+  .txSize8{
+    width: 30%;
+  }
+}
+@media (min-width: 1440px) {
+  .fontSize10 {
+    font-size: 16px;
+  }
+  .fontSize12 {
+    font-size: 18px;
+  }
+
+  .fontSize14 {
+    font-size: 20px;
+  }
+
+  .fontSize16 {
+    font-size: 22px;
+  }
+  .fontSize18 {
+    font-size: 24px;
+  }
+
+  .fontSize20 {
+    font-size: 26px;
+  }
+
+  .fontSize24 {
+    font-size: 30px;
+  }
+  .fontSize30 {
+    font-size: 80px;
+  }
+  .txSize{
+    width: 90%;
+  }
+  .txSize1{
+    width: 80%;
+  }
+  .txSize2{
+    width: 100%;
+  }
+  .txSize3{
+    width: 50%;
+  }
+  .txSize4{
+    width: 87%;
+  }
+  .txSize5{
+    width: 53%;
+  }
+  .txSize6{
+    width: 37%;
+  }
+  .txSize7{
+    width: 58%;
+  }
+  .txSize8{
+    width: 30%;
+  }
+}
+.textLeft{
+  text-align: left;
 }
 .bgImgHead{
   background-image: url("./images/Navbar/bgImg.png");
+}
 
+.Purpletx{
+  color: rgb(175,82,222)  ;
 }
 .Bluetx{
   color: #8156D9;
@@ -17,6 +299,36 @@ color: #743A91;
 }
 .Bluetx2{
   color: #AF52DE;
+  }
+  .Pera {
+    color: #C1C1C1;
+}
+  #Home{
+    background-image: url("./images/Navbar/bgImg.png");
+  }
+  .bgGradient{
+  background: rgb(117,88,216);
+  background-image: linear-gradient(90deg, rgba(117,88,216,1) 0%, rgba(175,82,222,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .bgGradient2{
+    background: linear-gradient(to right, #563692 0%, #332056 100%);
+    padding: 1.5rem; /* Adjust as needed */
+    border-radius: 0.5rem; /* Adjust as needed */
+    color: white;
+    text-align: left;
+    }
+    .bgGradient3{
+      background: rgb(140,69,255);
+      background: linear-gradient(90deg, rgba(140,69,255,1) 0%, rgba(78,0,191,1) 100%);
+      /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+      }
+
+   
+  .borderLeft{
+    border-left: 2px solid rgb(175,82,222);
   }
 .nvideaSpac{
   display: flex;
@@ -28,25 +340,50 @@ color: #743A91;
 .arch{
   background-image: url("./images/Arch/ArchGrid.png");
 }
-.txSize{
-  width: 80%;
+
+.gradient-border {
+  background: linear-gradient(90deg, #7558D8 0%, #3E2E72 100%);
+  padding: 2px;    
+  display: inline-block;
 }
-.txSize2{
-  width: 70%;
+.video-container {
+  overflow: hidden;
+  position: relative;
 }
-.txSize3{
-  width: 50%;
+@media (min-width: 577px) {
+  .video-container {
+    width: 1080px; 
+  height: 480px;
+  }
+
 }
-.txSize5{
-  width: 53%;
+@media (max-width: 576px) {
+  .video-container {
+    width: 100%; 
+    height: 200px;
+  }
 }
-.txSize6{
-  width: 37%;
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
-.txSize4{
-  width: 87%;
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  display: block; /* Visible by default */
+  pointer-events: none;
 }
+
 .gridIMG{
   background-image: url("./images/Arch/ArchSystem.png");
 }
@@ -217,3 +554,5 @@ button {
   position: absolute;
   bottom: 0;
 }
+
+

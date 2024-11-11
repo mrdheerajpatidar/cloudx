@@ -8,12 +8,18 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
     <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <div class="bg-black text-white">
       <header id="Home">
-        <div class="bgImgHead flex flex-col items-center justify-center">
+        <div
+          class="bgImgHead flex flex-col items-center justify-center md:pb-16 pb-6"
+        >
           <nav class="txSize md:py-5 py-2 w-full">
             <div
               class="container mx-auto flex justify-between items-center px-4 lg:px-8"
@@ -21,13 +27,12 @@
               <!-- Logo -->
               <div class="flex items-center">
                 <img
-                  src="/images/Navbar/Logo.png"
+                  src="./images/Navbar/Logo.png"
                   alt="Cloudox Logo"
                   class="h-8 sm:h-10 mr-2"
                 />
               </div>
 
-   
               <div
                 class="hidden md:flex space-x-4 sm:space-x-6 text-sm sm:text-base lg:text-lg"
               >
@@ -37,7 +42,6 @@
                 <a href="#GPU" class="hover:text-purple-400">GPU CLOUD</a>
               </div>
 
-          
               <div class="flex space-x-3 sm:space-x-4">
                 <a
                   href="#"
@@ -53,32 +57,32 @@
             </div>
           </nav>
 
-     
           <section
-            class="flex flex-col items-center leading-8 md:leading-10 justify-center mt-10 md:mt-20 px-4 text-center"
+            class="flex flex-col items-center justify-center mt-10 md:mt-20 text-center"
           >
             <h1
-              class="Bluetx text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extraboldmd:mt-4 mt-2"
+              class="bgGradient montserrat5 txSize2 fontSize30 textLeft font-semibold py-2"
             >
               The AI developer cloud
             </h1>
-            <h2
-              class="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 md:mt-4 mt-2"
-            >
-              Supercharging Next-Generation AI & Acceleration Computing
+            <h2 class="fontSize24 mt-2 montserrat1">
+              Supercharging Next-Generation<span class="font-bold montserrat3">
+                AI & Acceleration Computing</span
+              >
             </h2>
-            <p class="Bluetx1 text-sm sm:text-lg md:text-xl  md:mt-4 mt-2 md:mb-6 ">
+            <p
+              class="Purpletx font-semibold text-sm sm:text-lg md:text-xl mt-2 md:mb-6 mb-2"
+            >
               Join Revolution with Cloudox's
             </p>
 
- 
-            <button
-              class="bg-white text-purple-500 py-1 md:py-3 px-4 sm:px-6 font-semibold text-sm sm:text-base md:text-lg hover:bg-gray-200"
-            >
-              <div class="flex gap-2 items-center justify-center">
+            <button class="bg-white py-2">
+              <div
+                class="flex gap-2 items-center fontSize14 font-semibold montserrat1 text-black justify-center"
+              >
                 Launch Instance
                 <svg
-                  class="h-4 sm:h-5"
+                  class="md:h-4 h-3"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
                 >
@@ -89,79 +93,97 @@
               </div>
             </button>
 
-           
             <div class="mt-2 md:mt-4 lg:mt-6">
-              <p class="text-xs sm:text-sm">Discover More</p>
+              <p class="text-xs fontSize14">Discover More</p>
             </div>
+            <!-- <div class="containerArrow">
+              <div class="circle">
+                <span class="arrow"></span>
+              </div>
+            </div> -->
+            <!-- <div class="circle-container">
+              <div class="arrow"></div>
+              <div class="text">Discover More</div>
+            </div> -->
+            <!-- <div class="circle-container">
+              <div class="circle">
+                <div class="arrow"></div>
+              </div>
+              <div class="line"></div>
+              <div class="text">Discover More</div>
+            </div> -->
+            <!-- <div class="containerCir">
+              <div class="circle">
+                <div class="arrow"></div>
+              </div>
+              <div class="line"></div>
+              <div class="text">Discover More</div>
+            </div> -->
           </section>
         </div>
       </header>
 
- 
       <section class="machine">
-        <section class="mt-10 flex flex-col items-center leading-10">
-          <div class="txSize">
-            <div class="lg:txSize3 txSize4 text-start text-white">
-              <div class="container mx-auto md:px-6">
-                <h2
-                  class="lg:text-2xl md:text-lg text-sm  Bluetx1 font-bold md:mb-2"
+        <section>
+          <div class="mb-12 pt-4 flex items-center justify-center">
+            <div
+              class="container flex flex-col items-start gap-5 justify-center"
+            >
+              <h2 class="fontSize14 txSize1 Purpletx montserrat3 font-bold">
+                Revolution with NVIDIA A100 Tensor Core GPU
+              </h2>
+              <h1 class="fontSize24 txSize1 montserrat1">
+                Supercharging Next-Generation<br /><span
+                  class="Purpletx font-bold"
+                  >AI & Acceleration Computing</span
                 >
-                  Revolution with NVIDIA A100 Tensor Core GPU
-                </h2>
-                <h3 class="lg:text-4xl md:text-xl text-lg font-semibold md:mb-2">
-                  Supercharging Next-Generation
-                </h3>
-                <h2
-                  class="lg:text-4xl md:text-xl text-lg font-bold Bluetx md:mb-4"
-                >
-                  AI & Acceleration Computing
-                </h2>
-                <p class="lg:text-xl md:text-lg text-sm modernWay text-gray-400 md:mb-10">
-                  Introducing the cutting-edge NVIDIA A100 compute tray, a
-                  revolutionary solution utilising the full potential of
-                  NVIDIA's innovative HGX design. With 2 powerful Grace CPUs and
-                  4 advanced Blackwell GPUs, it delivers unparalleled
-                  performance to tackle the most demanding generative AI, data
-                  analytics and HPC tasks.
-                </p>
+              </h1>
 
-                <button
-                  class="bg-white lg:text-xl md:text-lg  text-sm text-purple-500 py-1 px-2 font-semibold hover:bg-gray-200"
+              <p class="fontSize12 txSize1 modernWay openText">
+                Introducing the cutting-edge NVIDIA A100 compute tray, a
+                revolutionary solution utilising the full potential of NVIDIA's
+                innovative HGX design. With 2 powerful Grace CPUs and 4 advanced
+                Blackwell GPUs, it delivers unparalleled performance to tackle
+                the most demanding generative AI, data analytics and HPC tasks.
+              </p>
+
+              <button class="bg-white text-sm">
+                <div
+                  class="flex text-black gap-2 items-center justify-center font-semibold"
                 >
-                  <div
-                    class="flex text-black gap-2 items-center justify-center"
+                  Know More
+                  <svg
+                    class="md:h-4 h-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
                   >
-                    Know More
-                    <svg
-                      class="md:h-5 h-3"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                    
-                      <path
-                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
+                    <path
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </section>
 
-
-        <section class="md:txSize4 flex items-center justify-center">
-          <div class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start">
+        <!-- LLM Section -->
+        <section class="flex items-center justify-center">
+          <div
+            class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start"
+          >
             <div
-              class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto px-6 gap-8"
+              class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8"
             >
               <div
                 class="flex flex-col items-start justify-center md:min-w-[240px]"
               >
-                <h4 class="md:text-xl text-lg font-semibold mb-2">LLM Inference</h4>
+                <h4 class="md:text-lg font-semibold mb-2">LLM Inference</h4>
                 <div class="flex items-center justify-center">
-                  <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">30X</p>
-                  <p class="text-sm ">
+                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                    30X
+                  </p>
+                  <p class="text-sm">
                     vs NVIDIA V100<br />Tensor <br />Core GPU
                   </p>
                 </div>
@@ -169,204 +191,239 @@
               <div
                 class="flex flex-col items-start justify-center md:min-w-[240px]"
               >
-                <h4 class="md:text-xl text-lg font-semibold mb-2">LLM Training</h4>
+                <h4 class="md:text-lg font-semibold mb-2">LLM Training</h4>
                 <div class="flex items-center justify-center">
-                  <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">04X</p>
+                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                    04X
+                  </p>
                   <p class="text-sm">vs NVIDIA V100</p>
                 </div>
               </div>
               <div
                 class="flex flex-col items-start justify-center md:min-w-[240px]"
               >
-                <h4 class="md:text-xl text-lg font-semibold mb-2">Energy Efficiency</h4>
+                <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
                 <div class="flex items-center justify-center">
-                  <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">25X</p>
+                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                    25X
+                  </p>
                   <p class="text-sm">vs NVIDIA V100</p>
                 </div>
               </div>
               <div
                 class="flex flex-col items-start justify-center md:min-w-[240px]"
               >
-                <h4 class="md:text-xl text-lg font-semibold mb-2">Energy Efficiency</h4>
+                <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
                 <div class="flex items-center justify-center">
-                  <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">18X</p>
+                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                    18X
+                  </p>
                   <p class="text-sm">vs CPU</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
- 
+        <!-- Image Section -->
         <section class="ready flex my-10 items-center justify-center">
-          <img class="txSize" src="/images/BigServer.png" alt="" />
+          <img class="txSize" src="./images/BigServer.png" alt="" />
         </section>
 
-        <section id="GPU" class="flex items-center justify-center md:mb-4 mb-8">
-          <div class="container txSize mx-auto text-center">
-            <h2 class="md:text-3xl text-lg font-semibold text-white md:mb-8 mb-3">
-              One Platform<span class="text-purple-500"
+        <section id="GPU" class="mb-20">
+          <div
+            class="container txSize mx-auto text-center gap-20 flex flex-col items-center justify-center pt-10"
+          >
+            <h2 class="md:text-3xl text-lg font-semibold text-white">
+              One Platform<span class="font-semibold Purpletx"
                 >, Multiple Options</span
               >
             </h2>
             <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center md:gap-0 gap-3"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center"
             >
               <div
-                class="md:border-b-2 md:border-r-2 md:border-[#464646] md:p-6 p-2 flex flex-col justify-between items-start group"
+                class="flex flex-col justify-between items-start gap-5 md:border-b-2 md:border-r-2 p-2 pb-5"
               >
-                <div class="flex items-start justify-center md:mb-3 mb-1">
-                  <img class="h-16 md:h-full" src="/images/MultiOption/one1.png" alt="" />
+                <div class="ml-2">
+                  <img
+                    class="h-14 md:h-full"
+                    src="./images/MultiOption/one1.png"
+                    alt=""
+                  />
                 </div>
-                <div class="md:mb-3 mb-1 flex flex-col items-start md:pr-8">
-                  <h3 class="md:text-lg text-sm font-semibold text-white]">
-                    High-Performance Dedicated Servers
-                  </h3>
-                  <p class="text-sm text-gray-400">
-                    Unleash the power of dedicated resources with Cloudox's
-                    high-performance servers, designed for compute-intensive
-                    applications.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  class="inline-flex md:text-lg text-sm mb-3 items-center text-purple-500 group-hover:text-purple-300 transition duration-300"
+                <div
+                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
                 >
-                  Learn More
-                  <svg
-                    class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                  High-Performance<br />Dedicated Servers
+                </div>
+                <div class="text-sm poppin1 text-left mr-3">
+                  Unleash the power of dedicated resources with Cloudox’s
+                  high-performance servers, designed for compute-intensive
+                  applications. Benefit from high availability and performance
+                  for critical applications without the latency of shared
+                  environments.
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-1 poppin text-sm"
                   >
-                    <path
-                      d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                    ></path>
-                  </svg>
-                </a>
+                    Learn More
+
+                    <svg
+                      class="h-4 group-hover:translate-x-1 transition duration-300"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-
-    
               <div
-                class="md:border-b-2 md:border-[#464646] md:p-6 p-2 flex flex-col justify-between items-start group"
+                class="flex flex-col justify-between items-start gap-4 md:border-b-2 p-2 pl-8 pb-5"
               >
-                <div class="flex items-start justify-center">
-                  <img class="h-16 md:h-full" src="/images/MultiOption/one1.png" alt="" />
-                   </div>
-                <div class="md:mb-3 mb-1 flex flex-col items-start pr-8">
-                  <h3 class="md:text-lg text-sm font-semibold text-white">
-                    Powerful GPUs for AI and HPC
-                  </h3>
-                  <p class="text-gray-400 text-sm">
-                    Our GPU servers offer unmatched computational power for
-                    artificial intelligence, deep learning, and high-performance
-                    computing.
-                  </p>
+                <div class="ml-2">
+                  <img
+                    class="h-14 md:h-full"
+                    src="./images/MultiOption/one2.png"
+                    alt=""
+                  />
                 </div>
-                <a
-                  href="#"
-                  class="inline-flex items-center md:text-lg text-sm text-purple-500 group-hover:text-purple-300 transition duration-300"
+                <div
+                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
                 >
-                  Learn More
-                  <svg
-                    class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                  Powerful GPUs for<br />AI and HPC
+                </div>
+                <div class="text-sm poppin1 text-left mr-3">
+                  Our GPU servers offer unmatched computational power for
+                  artificial intelligence, deep learning, and high-performance
+                  computing (HPC). These are ideal for AI researchers, data
+                  scientists, and industries requiring heavy data processing.
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-1 poppin text-sm"
                   >
-                    <path
-                      d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                    ></path>
-                  </svg>
-                </a>
+                    Learn More
+
+                    <svg
+                      class="h-4 group-hover:translate-x-1 transition duration-300"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-
-  
               <div
-                class="md:p-6 p-2 md:border-r-2 md:border-[#464646] justify-between flex flex-col items-start group"
+                class="flex flex-col justify-between items-start gap-8 pt-8 md:border-r-2 p-2"
               >
-                <div class="md:mb-3 mb-1 flex items-start justify-center">
-                  <img class="h-10 md:h-full" src="/images/MultiOption/one3.png" alt="" />
+                <div class="ml-2">
+                  <img
+                    class="h-14 md:h-full"
+                    src="./images/MultiOption/one3.png"
+                    alt=""
+                  />
                 </div>
-                <div class="md:mb-3 mb-1 flex flex-col items-start pr-8">
-                  <h3 class="md:text-lg text-sm font-semibold text-white">
-                    Scalable Cloud Servers
-                  </h3>
-                  <p class="text-gray-400 text-sm">
-                    Built for businesses needing flexibility, Cloudox's servers
-                    deliver robust performance with scalability for dynamic
-                    environments.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  class="inline-flex md:mb-3 mb-1 md:text-lg text-sm items-center text-purple-500 group-hover:text-purple-300 transition duration-300"
+                <div
+                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
                 >
-                  Learn More
-                  <svg
-                    class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                  Scalable<br />Cloud Servers
+                </div>
+                <div class="text-sm poppin1 text-left mr-3">
+                  Built for businesses needing flexibility, Cloudox’s cloud
+                  servers deliver robust performance with the scalability
+                  required for dynamic environments. Perfect for web hosting,
+                  application deployment, and development environments.
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-1 poppin text-sm"
                   >
-                    <path
-                      d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                    ></path>
-                  </svg>
-                </a>
+                    Learn More
+
+                    <svg
+                      class="h-4 group-hover:translate-x-1 transition duration-300"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-
-
               <div
-                class="md:p-6 p-2 rounded-lg flex flex-col gap-3 justify-between items-start group"
+                class="flex flex-col justify-between items-start gap-8 pt-8 p-2 pl-8"
               >
-                <div class="flex md:mb-3 mb-1 items-start justify-center">
-                  <img class="h-10 md:h-full" src="/images/MultiOption/one4.png" alt="" />
+                <div class="ml-2">
+                  <img
+                    class="h-14 md:h-full"
+                    src="./images/MultiOption/one4.png"
+                    alt=""
+                  />
                 </div>
-                <div class="md:mb-3 mb-1 flex flex-col items-start pr-8">
-                  <h3
-                    class="md:text-lg text-sm leading-7 font-semibold text-start items-start"
-                  >
-                    Tally on Cloud - Simplifying Accounting Operations
-                  </h3>
-                  <p class="text-gray-400 text-sm">
-                    Cloudox’s Tally on Cloud brings Tally to a flexible, secure
-                    cloud environment for streamlined accounting processes.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  class="inline-flex md:mb-3 mb-1 md:text-lg text-sm items-center text-purple-500 group-hover:text-purple-300 transition duration-300"
+                <div
+                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
                 >
-                  Learn More
-                  <svg
-                    class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                  Tally on Cloud<br />Simplifying Accounting Operations
+                </div>
+                <div class="text-sm poppin1 text-left mr-3">
+                  Cloudox’s Tally on Cloud brings India’s popular accounting
+                  software Tally to a flexible, secure cloud environment.
+                  Perfect for businesses looking to streamline accounting
+                  processes and enhance remote access capabilities.
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-1 poppin text-sm"
                   >
-                    <path
-                      d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                    ></path>
-                  </svg>
-                </a>
+                    Learn More
+
+                    <svg
+                      class="h-4 group-hover:translate-x-1 transition duration-300"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- highlight -->
+        <section class="lg:mb-20 text-center">
+          <div
+            class="container flex flex-col items-center justify-center gap-2"
+          >
+            <p class="Purpletx text-lg montserrat3 font-bold">HIGHLIGHTS</p>
 
-        <section class="lg:mb-10 mb-4 lg:mt-20  text-center">
-          <div class="container mx-auto md:px-6 px-4">
-            <p
-              class="lg:text-xl md:text-lg text-sm text-purple-500 font-semibold tracking-wide md:mb-2 uppercase"
-            >
-              Highlights
-            </p>
-
-            <h2 class="lg:text-6xl md:text-2xl text-lg font-normal text-white mb-4">
-              NVIDIA <span class="text-purple-500">A100 Tensor Core GPU</span>
+            <h2 class="montserrat1 text-5xl font-semibold text-white mb-6">
+              NVIDIA
+              <span class="Purpletx montserrat3 font-bold"
+                >A100 Tensor Core GPU</span
+              >
             </h2>
 
-            <p class="lg:text-xl md:text-lg text-sm text-gray-300 max-w-2xl mx-auto">
+            <p class="text-sm txSize3 modernWay openText">
               The NVIDIA A100 Tensor Core GPU is a high-performance computing
               architecture developed by NVIDIA. It is part of the company's line
               of data center GPUs designed to deliver advanced processing
@@ -376,47 +433,54 @@
         </section>
       </section>
 
-
-      <section class="md:txSize4 flex items-center justify-center md:mb-6 mb-3">
-        <div class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start">
+      <section class="flex items-center justify-center mb-8">
+        <div
+          class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start"
+        >
           <div
-            class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto px-6 gap-8"
+            class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8"
           >
             <div
               class="flex flex-col items-start justify-center md:min-w-[240px]"
             >
-              <h4 class="md:text-xl text-lg font-semibold mb-2">LLM Inference</h4>
+              <h4 class="md:text-lg font-semibold mb-2">LLM Inference</h4>
               <div class="flex items-center justify-center">
-                <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">30X</p>
-                <p class="text-sm ">
-                  vs NVIDIA V100<br />Tensor <br />Core GPU
+                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                  30X
                 </p>
+                <p class="text-sm">vs NVIDIA V100<br />Tensor <br />Core GPU</p>
               </div>
             </div>
             <div
               class="flex flex-col items-start justify-center md:min-w-[240px]"
             >
-              <h4 class="md:text-xl text-lg font-semibold mb-2">LLM Training</h4>
+              <h4 class="md:text-lg font-semibold mb-2">LLM Training</h4>
               <div class="flex items-center justify-center">
-                <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">04X</p>
+                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                  04X
+                </p>
                 <p class="text-sm">vs NVIDIA V100</p>
               </div>
             </div>
             <div
               class="flex flex-col items-start justify-center md:min-w-[240px]"
             >
-              <h4 class="md:text-xl text-lg font-semibold mb-2">Energy Efficiency</h4>
+              <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
               <div class="flex items-center justify-center">
-                <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">25X</p>
+                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                  25X
+                </p>
                 <p class="text-sm">vs NVIDIA V100</p>
               </div>
             </div>
             <div
               class="flex flex-col items-start justify-center md:min-w-[240px]"
             >
-              <h4 class="md:text-xl text-lg font-semibold mb-2">Energy Efficiency</h4>
+              <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
               <div class="flex items-center justify-center">
-                <p class="md:text-6xl text-4xl font-bold text-purple-500 mr-2">18X</p>
+                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
+                  18X
+                </p>
                 <p class="text-sm">vs CPU</p>
               </div>
             </div>
@@ -424,307 +488,314 @@
         </div>
       </section>
 
-      <section class="flex items-center justify-center py-10 md:py-4">
-        <video controls autoplay class="txSize">
-          <source  src="/images/intro.mp4" type="video/mp4" />
-        </video>
+      <section class="flex items-center justify-center mb-20">
+        <div class="gradient-border">
+          <div class="video-container">
+            <video id="myVideo" poster="./images/Video/VideoBg.png">
+              <source src="./images/Video/intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <img
+              src="./images/Video/playBtn.png"
+              alt="Play Button"
+              class="play-overlay"
+              id="playOverlay"
+            />
+          </div>
+        </div>
       </section>
 
-
-      <section class="md:py-16 py:6 bg-black text-left txSize mx-auto">
-        <div class="container mx-auto px-6">
-          
-          <p
-            class="text-sm text-purple-500 font-semibold tracking-wide uppercase mb-2"
-          >
-            Performance at the Core
-          </p>
-   
-          <h2 class="lg:text-4xl md:text-xl text-lg font-bold text-white leading-tight mb-6">
-            Foundation of Everything We Do 
-            <span class="text-purple-500"
-              >Boosting High Performance Efficiency by 48%</span
-            >
-           
-            with Advanced Cooling Technology
-          </h2>
-
-          <p class="md:text-lg text-sm text-gray-300 mb-8 max-w-3xl">
-            We're not just innovating in AI; we're redefining performance.
-            Cloudox is engineered for peak efficiency, with state-of-the-art
-            cooling systems that keep your systems running smoothly, reducing
-            downtime and maximizing speed and power for all workloads.
-          </p>
-
-
-          <div class="space-y-6">
-      
-            <div class="flex items-start md:gap-2 gap-4">
-              <img class="md:h-5 h-4" src="/images/circle-check.png" alt="" />
-              <div> 
-                <h3 class="md:text-xl text-lg font-semibold text-white">
+      <section>
+        <div class="flex items-center justify-center mb-20">
+          <div class="flex flex-col items-start justify-center gap-4 txSize1">
+            <h1 class="montserrat2 uppercase font-bold text-lg Purpletx">
+              Performance at the Core
+            </h1>
+            <h1 class="montserrat1 font-semibold text-4xl leading-10">
+              Foundation of Everything We Do<br /><span
+                class="montserrat3 Purpletx font-semibold"
+                >Boosting High Performance Efficiency by 48%<br />with Advanced
+                Cooling Technology
+              </span>
+            </h1>
+            <p class="text-sm montserrat txSize7">
+              We're not just innovating in AI; we’re redefining performance.
+              Cloudox is engineered for peak efficiency, with state-of-the-art
+              cooling systems that keep your systems running smoothly, reducing
+              downtime and maximizing speed and power for all workloads.
+            </p>
+            <div class="flex items-start gap-4">
+              <img class="md:h-5 mt-1" src="./images/circle-check.png" alt="" />
+              <div class="flex flex-col items-start justify-center gap-2">
+                <h1 class="montserrat3 font-bold text-lg">
                   Optimized for High Performance
-                </h3>
-                <p class="text-gray-300 md:text-lg text-sm">
-                  By optimizing energy usage, we're reducing carbon emissions
+                </h1>
+                <p class="openText text-sm txSize3">
+                  By optimizing energy usage, we’re reducing carbon emissions
                   and operational costs, making your AI deployments more
                   sustainable.
                 </p>
               </div>
             </div>
-            <div class="flex items-start md:gap-2 gap-4">
-              <img class="md:h-5 h-4" src="/images/circle-check.png" alt="" />
-              <div> 
-                <h3 class="md:text-xl text-lg font-semibold text-white">
+
+            <div class="flex flex-row items-start gap-4">
+              <img class="md:h-5 mt-1" src="./images/circle-check.png" alt="" />
+              <div class="flex flex-col items-start justify-center gap-2">
+                <h1 class="montserrat3 font-bold text-lg">
                   Strong Partnerships for Maximum Power
-                </h3>
-                <p class="text-gray-300 md:text-lg text-sm">
+                </h1>
+                <p class="openText text-sm txSize3">
                   We partner with energy-efficient technology providers to
                   ensure your AI workloads are powered responsibly.
                 </p>
               </div>
             </div>
-
-            
-          </div>
-
-          <div class="md:mt-8 mt-4">
-            <a
-              href="#"
-              class="md:text-lg text-sm text-purple-500 font-semibold hover:underline flex items-center"
-            >
-              Read More
-              <svg
-                class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
+            <button class="bg-white montserrat text-sm">
+              <div
+                class="flex text-black gap-2 items-center justify-center font-semibold"
               >
-                <path
-                  d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="Services" class="md:py-16 py-6 bg-black text-center txSize mx-auto">
-        <div class="container mx-auto px-6">
-
-          <p
-            class="text-lg text-purple-500 font-semibold tracking-wide uppercase mb-2"
-          >
-            Features
-          </p>
-
-          <h2 class="md:text-5xl text-lg font-normal text-white leading-tight mb-4">
-            Experience Cloudox’s <br />
-            <span class="text-purple-500 font-bold">Value Benefit Model</span>
-          </h2>
-
-          <p class="md:text-lg text-sm mx-10 text-gray-300 mb-12">
-            Experience top-tier performance with added value that only Cloudox
-            can provide.
-          </p>
-
-  
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-            <div
-              class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-            >
-              <div class="md:mb-4 mb-1">
-                <img class="h-8 md:h-full"  src="/images/Benefit/web1.png" alt="" />
-              </div>
-              <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Innovative Performance</h3>
-              <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-                Enhance performance with state-of-the-art innovations tailored
-                for efficiency.
-              </p>
-              <a
-                href="#"
-                class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-              >
-                Learn More
+                Read More
                 <svg
-                  class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                  fill="currentColor"
+                  class="md:h-4 h-3"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 448 512"
                 >
                   <path
-                    d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                  ></path>
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
                 </svg>
-              </a>
-            </div>
-
-
-
-            <div
-            class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-          >
-            <div class="md:mb-4 mb-1">
-              <img class="h-8 md:h-full"  src="/images/Benefit/web2.png" alt="" />
-            </div>
-            <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Data Protection</h3>
-            <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-              Robust security measures to protect your critical data.
-            </p>
-            <a
-              href="#"
-              class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-            >
-              Learn More
-              <svg
-                class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-
-
-
-
-          <div
-          class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-        >
-          <div class="md:mb-4 mb-1">
-            <img class="h-8 md:h-full"  src="/images/Benefit/web3.png" alt="" />
-          </div>
-          <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Cloud-Enhanced Innovation</h3>
-          <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-            Leveraging cloud technology to drive innovation.
-          </p>
-          <a
-            href="#"
-            class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-          >
-            Learn More
-            <svg
-              class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-              ></path>
-            </svg>
-          </a>
-        </div>
-
-            
-            
-        <div
-        class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-      >
-        <div class="md:mb-4 mb-1">
-          <img class="h-8 md:h-full"  src="/images/Benefit/web4.png" alt="" />
-        </div>
-        <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Global Reach</h3>
-        <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-          Supporting global AI deployments, no matter where your business
-          operates.
-        </p>
-        <a
-          href="#"
-          class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-        >
-          Learn More
-          <svg
-            class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-
-
-      <div
-      class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-    >
-      <div class="md:mb-4 mb-1">
-        <img class="h-8 md:h-full"  src="/images/Benefit/web5.png" alt="" />
-      </div>
-      <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Enhanced Control</h3>
-      <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-        Real-time monitoring and AI-driven analytics to optimize
-        resources.
-      </p>
-      <a
-        href="#"
-        class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-      >
-        Learn More
-        <svg
-          class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-        >
-          <path
-            d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-          ></path>
-        </svg>
-      </a>
-    </div>
-           
-     
-      
-
-          
-    <div
-    class="bg-gradient-to-br from-purple-700 to-purple-900 p-6 rounded-lg text-left text-white"
-  >
-    <div class="md:mb-4 mb-1">
-      <img class="h-8 md:h-full"  src="/images/Benefit/web6.png" alt="" />
-    </div>
-    <h3 class="md:text-xl text-lg font-semibold md:mb-2 mb-1">Trusted Partnerships</h3>
-    <p class="text-gray-300 md:text-lg text-sm md:mb-4 mb-2">
-      Collaborate with world-leading AI technology partners for
-      optimal results.
-    </p>
-    <a
-      href="#"
-      class="md:text-lg text-sm text-purple-300 font-semibold flex items-center hover:underline"
-    >
-      Learn More
-      <svg
-        class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path
-          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-        ></path>
-      </svg>
-    </a>
-  </div>
-         
-
-           
+              </div>
+            </button>
           </div>
         </div>
       </section>
 
+      <section id="Services">
+        <div class="flex items-center justify-center mb-20">
+          <div
+            class="txSize container flex flex-col items-center justify-center gap-2"
+          >
+            <h1 class="montserrat2 uppercase font-bold text-lg Purpletx">
+              Features
+            </h1>
+            <h1 class="montserrat2 text-4xl leading-10">
+              Experience Cloudox’s <br />
+              <span class="montserrat4 Purpletx font-semibold"
+                >Value Benefit Model</span
+              >
+            </h1>
+            <div class="txSize8">
+              <p class="openText text-sm pt-6">
+                Experience top-tier performance with added value that only
+                Cloudox can provide.
+              </p>
+            </div>
+            <div class="">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-16"
+              >
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web1.png" alt="" />
 
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Innovative Performance
+                  </h3>
+                  <p class="Pera text-sm">
+                    Enhance performance with state-of-the-art innovations
+                    tailored for efficiency.
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
 
-      <section  class="relative backGround2 md:backGround3">
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web2.png" alt="" />
+
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Data Protection
+                  </h3>
+                  <p class="Pera text-sm">
+                    Robust security measures to protect critical data.
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
+
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web3.png" alt="" />
+
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Cloud-Enhanced Innovation
+                  </h3>
+                  <p class="Pera text-sm">
+                    Lorem ipsum dolor sit amet. Id commodi internos est fugiat
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
+
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web4.png" alt="" />
+
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Global Reach
+                  </h3>
+                  <p class="Pera text-sm">
+                    We support global AI deployments, no matter where your
+                    business operates.
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
+
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web5.png" alt="" />
+
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Enhanced Control
+                  </h3>
+                  <p class="Pera text-sm">
+                    Real-time monitoring and AI-driven analytics to optimize
+                    resources.
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
+
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                >
+                  <img class="h-12" src="./images/Benefit/web6.png" alt="" />
+
+                  <h3 class="montserrat5 text-xl font-semibold">
+                    Trusted Partnerships
+                  </h3>
+                  <p class="Pera text-sm">
+                    Collaborate with world-leading AI<br />
+                    technology partners for the best results.
+                  </p>
+                  <div class="flex items-start">
+                    <a
+                      href="#"
+                      class="flex items-center justify-center gap-1 montserrat1 text-sm"
+                    >
+                      Learn More
+
+                      <svg
+                        class="h-4 group-hover:translate-x-1 transition duration-300"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative backGround2 md:backGround3">
         <div class="flex items-center justify-center">
           <div class="txSize">
             <p
@@ -732,15 +803,16 @@
             >
               Our Achievements
             </p>
-            <div
-              class="grid z-10 grid-cols-2  md:grid-cols-4 md:gap-6 gap-1"
-            >
+            <div class="grid z-10 grid-cols-2 md:grid-cols-4 md:gap-6 gap-1">
               <div
                 class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
               >
-                <div >
-                  <img 
-                  class="md:h-full h-10" src="/images/Arch/Arch1.png" alt="" />
+                <div>
+                  <img
+                    class="md:h-full h-10"
+                    src="./images/Arch/Arch1.png"
+                    alt=""
+                  />
                 </div>
                 <div>
                   <p class="md:text-5xl text-xl Bluetx2 font-bold">20+</p>
@@ -748,54 +820,53 @@
                 </div>
               </div>
 
+              <div
+                class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
+              >
+                <div>
+                  <img
+                    class="md:h-full h-10"
+                    src="./images/Arch/Arch2.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="md:text-5xl text-xl Bluetx2 font-bold">4+</p>
+                  <p class="md:text-lg text-sm">Winning awards</p>
+                </div>
+              </div>
 
               <div
-              class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
-            >
-              <div >
-                <img 
-                class="md:h-full h-10" src="/images/Arch/Arch2.png" alt="" />
+                class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
+              >
+                <div>
+                  <img
+                    class="md:h-full h-10"
+                    src="./images/Arch/Arch3.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="md:text-5xl text-xl Bluetx2 font-bold">50+</p>
+                  <p class="md:text-lg text-sm">Completed projects</p>
+                </div>
               </div>
-              <div>
-                <p class="md:text-5xl text-xl Bluetx2 font-bold">4+</p>
-                <p class="md:text-lg text-sm">Winning awards</p>
+
+              <div
+                class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
+              >
+                <div>
+                  <img
+                    class="md:h-full h-10"
+                    src="./images/Arch/Arch4.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="md:text-5xl text-xl Bluetx2 font-bold">60+</p>
+                  <p class="md:text-lg text-sm">Client reviews</p>
+                </div>
               </div>
-            </div>
-      
-            
-            
-
-            <div
-            class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
-          >
-            <div >
-              <img 
-              class="md:h-full h-10" src="/images/Arch/Arch3.png" alt="" />
-            </div>
-            <div>
-              <p class="md:text-5xl text-xl Bluetx2 font-bold">50+</p>
-              <p class="md:text-lg text-sm">Completed projects</p>
-            </div>
-          </div>
-    
-
-            
-
-
-          <div
-          class="md:py-10 py-0 bg-gradient-to-br from-purple-700 to-purple-900 flex md:flex-row flex-col md:gap-2 gap-1 items-center justify-center text-white"
-        >
-          <div >
-            <img 
-            class="md:h-full h-10" src="/images/Arch/Arch4.png" alt="" />
-          </div>
-          <div>
-            <p class="md:text-5xl text-xl Bluetx2 font-bold">60+</p>
-            <p class="md:text-lg text-sm">Client reviews</p>
-          </div>
-        </div>
-       
-            
             </div>
 
             <div class="lg:my-36 my-12">
@@ -813,7 +884,7 @@
                   <div class="md:mt-8 mt-1">
                     <a
                       href="#"
-                      class=" text-sm md:text-lg text-purple-500 font-semibold hover:underline flex items-center"
+                      class="text-sm md:text-lg text-purple-500 font-semibold hover:underline flex items-center"
                     >
                       Read More
                       <svg
@@ -835,51 +906,113 @@
         </div>
       </section>
 
-    
-
-      <footer class="">
+      <footer class="py-5 flex flex-col items-center justify-around">
         <div
-          class="container mx-auto flex txSize items-center md:flex-row md:justify-between px-6"
+          class="container flex txSize items-center flex-col md:flex-row md:justify-between gap-2 md:mb-0 mb-2"
         >
-          <div class="flex items-center mb-6 md:mb-0">
-            <img
-              src="/images/Navbar/Logo.png"
-              alt="Cloudox Logo"
-              class="h-12 mr-2"
-            />
+          <div class="flex items-center">
+            <a href="#">
+              <img
+                src="./images/Navbar/Logo.png"
+                alt="Cloudox Logo"
+                class="h-12 mr-2"
+            /></a>
           </div>
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left"
+            class="grid grid-cols-3 gap-4 text-center items-start md:gap-8 gap-3 justify-between"
           >
-            <div>
-              <h3 class="text-purple-400 font-semibold uppercase mb-2">Info</h3>
-              <ul>
-                <li><a href="#" class="hover:text-purple-500">About Us</a></li>
-                <li><a href="#" class="hover:text-purple-500">Terms</a></li>
+            <div class="text-left flex flex-col">
+              <h3
+                class="Purpletx font-semibold uppercase montserrat2 fontSize12 md:fontSize16 mb-4"
+              >
+                Info
+              </h3>
+              <ul class="flex flex-col justify-around md:gap-1">
                 <li>
-                  <a href="#" class="hover:text-purple-500">Privacy Policy</a>
+                  <a
+                    href="#"
+                    class="montserrat1 fontSize12 md:fontSize16 hover:Purpletx"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="montserrat1 fontSize12 md:fontSize16 hover:Purpletx"
+                    >Terms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="montserrat1 fontSize12 md:fontSize16 hover:Purpletx"
+                    >Privacy Policy</a
+                  >
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 class="text-purple-400 font-semibold uppercase mb-2">
+            <div class="text-left flex flex-col">
+              <h3
+                class="Purpletx font-semibold uppercase montserrat2 fontSize12 md:fontSize16 mb-4"
+              >
                 Contact Us
               </h3>
-              <p>+91 8349663661</p>
-              <p>hello@cloudox.com</p>
+              <a
+                href="tel:+918349663661"
+                class="montserrat1 fontSize12 md:fontSize16 hover:Purpletx pointer mb-1"
+                >+91 8349663661</a
+              >
+              <a
+                href="mailto:hello@cloudox.com"
+                class="montserrat1 fontSize12 md:fontSize16 hover:Purpletx"
+                >hello@cloudox.com</a
+              >
             </div>
-            <div>
-              <h3 class="text-purple-400 font-semibold uppercase mb-2">
+            <div class="text-left flex flex-col md:pl-0 pl-6">
+              <h3
+                class="Purpletx font-semibold uppercase montserrat2 fontSize12 mb-4"
+              >
                 Find Us
               </h3>
-              <p>Indore, MP 452002</p>
+              <a
+                href="https://www.google.com/maps?q=Indore,+MP+452002"
+                target="_blank"
+                class="montserrat1 fontSize12 hover:Purpletx"
+                >Indore, MP 452002</a
+              >
             </div>
           </div>
         </div>
-        <div class="txSize ml-36 text-start text-gray-300">
-          <p>&copy; 2024 Cloudox — All rights reserved.</p>
+
+        <div class="txSize flex items-center justify-between">
+          <p class="md:text-sm fontSize10 montserrat">
+            &copy; 2024 Cloudox — All rights reserved.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <a
+              href="https://www.instagram.com/your_instagram_username"
+              target="_blank"
+            >
+              <img
+                class="md:h-8 h-5"
+                src="./images/Footer/Instagram.png"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/your_linkedin_profile"
+              target="_blank"
+            >
+              <img
+                class="md:h-8 h-5"
+                src="./images/Footer/Linkdin.png"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
