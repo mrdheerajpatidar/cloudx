@@ -20,6 +20,7 @@ video.addEventListener("click", () => {
     video.removeAttribute("controls");
   }
 });
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

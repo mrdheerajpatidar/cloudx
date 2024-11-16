@@ -17,10 +17,8 @@
   <body>
     <div class="bg-black text-white">
       <header id="Home">
-        <div
-          class="bgImgHead flex flex-col items-center justify-center md:pb-16 pb-6"
-        >
-          <nav class="navbar txSize">
+        <div class="bgImgHead flex flex-col items-center justify-center mb-20">
+          <nav class="navbar md:txSize txSizeFull">
             <!-- Logo -->
             <a href="#" class="nav-logo txSize11">
               <img
@@ -75,7 +73,6 @@
               </div>
             </ul>
 
-            <!-- Hamburger Icon -->
             <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -84,31 +81,27 @@
           </nav>
 
           <section
-            class="flex flex-col items-center justify-center mt-10 md:mt-20 text-center"
+            class="flex flex-col items-center justify-center marzn text-center"
           >
-            <h1
-              class="bgGradient montserrat5 txSize2 fontSize30 textLeft font-semibold py-2"
-            >
+            <h1 class="bgGradient montserrat3 fontSize30 font-semibold mb-9">
               The AI developer cloud
             </h1>
-            <h2 class="fontSize24 mt-2 montserrat1">
+            <h2 class="fontSize24 montserrat2 mb-9">
               Supercharging Next-Generation<span class="font-bold montserrat3">
                 AI & Acceleration Computing</span
               >
             </h2>
-            <p
-              class="Purpletx font-semibold text-sm sm:text-lg md:text-xl mt-2 md:mb-6 mb-2"
-            >
-              Join Revolution with Cloudox's
+            <p class="Purpletx font-semibold fontJoin capitalize mb-5">
+              Join Revolution with Cloudox
             </p>
 
-            <button class="bg-white py-2">
+            <button class="bg-white py-5 rounded-none mb-10">
               <div
-                class="flex gap-2 items-center fontSize14 font-semibold montserrat1 text-black justify-center"
+                class="flex gap-2 items-center fontLaunchBtn font-semibold montserrat1 text-black justify-center"
               >
                 Launch Instance
                 <svg
-                  class="md:h-4 h-3"
+                  class="md:h-3 h-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
                 >
@@ -119,8 +112,8 @@
               </div>
             </button>
 
-            <div class="mt-2 md:mt-4 lg:mt-6">
-              <p class="text-xs fontSize14">Discover More</p>
+            <div class="">
+              <p class="fontDiscover">Discover More</p>
             </div>
             <!-- <div class="containerArrow">
               <div class="circle">
@@ -150,22 +143,22 @@
       </header>
 
       <section class="machine">
-        <section>
-          <div class="mb-12 pt-4 flex items-center justify-center">
+        <section class="flex items-center justify-center mb-32">
+          <div class="flex items-center sizeRevolution justify-start">
             <div
-              class="container flex flex-col items-start gap-5 justify-center"
+              class="container flex flex-col sizeRevolutionInner items-start gap-6 justify-center"
             >
-              <h2 class="fontSize14 txSize1 Purpletx montserrat3 font-bold">
+              <h2 class="fontRevolution Purpletx montserrat3 font-bold">
                 Revolution with NVIDIA A100 Tensor Core GPU
               </h2>
-              <h1 class="fontSize24 txSize1 montserrat1">
+              <h1 class="fontSuper montserrat1">
                 Supercharging Next-Generation<br /><span
                   class="Purpletx font-bold"
                   >AI & Acceleration Computing</span
                 >
               </h1>
 
-              <p class="fontSize12 txSize1 modernWay openText">
+              <p class="fontIntroducing modernWay openText">
                 Introducing the cutting-edge NVIDIA A100 compute tray, a
                 revolutionary solution utilising the full potential of NVIDIA's
                 innovative HGX design. With 2 powerful Grace CPUs and 4 advanced
@@ -173,13 +166,13 @@
                 the most demanding generative AI, data analytics and HPC tasks.
               </p>
 
-              <button class="bg-white text-sm">
+              <button class="bg-white rounded-none">
                 <div
-                  class="flex text-black gap-2 items-center justify-center font-semibold"
+                  class="flex text-black gap-2 items-center fontLaunchBtn py-1 justify-center font-semibold"
                 >
                   Know More
                   <svg
-                    class="md:h-4 h-3"
+                    class="md:h-3 h-2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
                   >
@@ -195,94 +188,92 @@
 
         <!-- LLM Section -->
         <section class="flex items-center justify-center">
-          <div
-            class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start"
-          >
+          <div class="text-white text-start txLlm">
             <div
-              class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8"
+              class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
             >
               <div
-                class="flex flex-col items-start justify-center md:min-w-[240px]"
+                class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="md:text-lg font-semibold mb-2">LLM Inference</h4>
-                <div class="flex items-center justify-center">
-                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                    30X
-                  </p>
-                  <p class="text-sm">
-                    vs NVIDIA V100<br />Tensor <br />Core GPU
+                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                  LLM Inference
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">30X</p>
+                  <p class="fontSide montserrat1">
+                    vs NVIDIA V100 Tensor Core GPU
                   </p>
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center md:min-w-[240px]"
+                class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="md:text-lg font-semibold mb-2">LLM Training</h4>
-                <div class="flex items-center justify-center">
-                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                    04X
-                  </p>
-                  <p class="text-sm">vs NVIDIA V100</p>
+                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                  LLM Training
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">04X</p>
+                  <p class="fontSide montserrat1">vs NVIDIA V100</p>
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center md:min-w-[240px]"
+                class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
-                <div class="flex items-center justify-center">
-                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                    25X
-                  </p>
-                  <p class="text-sm">vs NVIDIA V100</p>
+                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                  Energy Efficiency
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">25X</p>
+                  <p class="fontSide montserrat1">vs NVIDIA V100</p>
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center md:min-w-[240px]"
+                class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
-                <div class="flex items-center justify-center">
-                  <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                    18X
-                  </p>
-                  <p class="text-sm">vs CPU</p>
+                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                  Energy Efficiency
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">18X</p>
+                  <p class="fontSide montserrat1">vs CPU</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <!-- Image Section -->
-        <section class="ready flex my-10 items-center justify-center">
-          <img class="txSize" src="./images/BigServer.png" alt="" />
+        <section class="ready flex my-40 items-center justify-center">
+          <img class="txImg pt-32" src="./images/BigServer.png" alt="" />
         </section>
 
-        <section id="GPU" class="mb-20">
+        <section id="GPU" class="mb-32">
           <div
-            class="container txSize mx-auto text-center gap-20 flex flex-col items-center justify-center pt-10"
+            class="container txSize mx-auto text-center flex flex-col items-center justify-center"
           >
-            <h2 class="md:text-3xl text-lg font-semibold text-white">
+            <h2 class="fontOne montserrat2 font-semibold text-white mb-36">
               One Platform<span class="font-semibold Purpletx"
                 >, Multiple Options</span
               >
             </h2>
             <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-0 gap-20 pl-10 md:pl-0 justify-center"
             >
               <div
-                class="flex flex-col justify-between items-start gap-5 md:border-b-2 md:border-r-2 p-2 pb-5"
+                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderB gradientBorderR"
               >
                 <div class="ml-2">
                   <img
-                    class="h-14 md:h-full"
+                    class="h-20 md:h-full"
                     src="./images/MultiOption/one1.png"
                     alt=""
                   />
                 </div>
                 <div
-                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
+                  class="txHi poppin text-left borderLeft pl-5 font-semibold"
                 >
                   High-Performance<br />Dedicated Servers
                 </div>
-                <div class="text-sm poppin1 text-left mr-3">
+                <div class="txPara1 poppin1 text-left mr-3">
                   Unleash the power of dedicated resources with Cloudox’s
                   high-performance servers, designed for compute-intensive
                   applications. Benefit from high availability and performance
@@ -310,21 +301,21 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-4 md:border-b-2 p-2 pl-8 pb-5"
+                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderB2"
               >
                 <div class="ml-2">
                   <img
-                    class="h-14 md:h-full"
+                    class="h-19 md:h-full"
                     src="./images/MultiOption/one2.png"
                     alt=""
                   />
                 </div>
                 <div
-                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
+                  class="txHi poppin text-left borderLeft pl-5 font-semibold"
                 >
                   Powerful GPUs for<br />AI and HPC
                 </div>
-                <div class="text-sm poppin1 text-left mr-3">
+                <div class="txPara1 poppin1 text-left mr-3">
                   Our GPU servers offer unmatched computational power for
                   artificial intelligence, deep learning, and high-performance
                   computing (HPC). These are ideal for AI researchers, data
@@ -351,21 +342,21 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-8 pt-8 md:border-r-2 p-2"
+                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderR2"
               >
                 <div class="ml-2">
                   <img
-                    class="h-14 md:h-full"
+                    class="h-18 md:h-full"
                     src="./images/MultiOption/one3.png"
                     alt=""
                   />
                 </div>
                 <div
-                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
+                  class="txHi poppin text-left borderLeft pl-5 font-semibold"
                 >
                   Scalable<br />Cloud Servers
                 </div>
-                <div class="text-sm poppin1 text-left mr-3">
+                <div class="txPara1 poppin1 text-left mr-3">
                   Built for businesses needing flexibility, Cloudox’s cloud
                   servers deliver robust performance with the scalability
                   required for dynamic environments. Perfect for web hosting,
@@ -392,21 +383,21 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-8 pt-8 p-2 pl-8"
+                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8"
               >
                 <div class="ml-2">
                   <img
-                    class="h-14 md:h-full"
+                    class="h-18 md:h-full"
                     src="./images/MultiOption/one4.png"
                     alt=""
                   />
                 </div>
                 <div
-                  class="txSize4 poppin text-left borderLeft pl-5 font-semibold text-lg"
+                  class="txHi poppin text-left borderLeft pl-5 font-semibold"
                 >
                   Tally on Cloud<br />Simplifying Accounting Operations
                 </div>
-                <div class="text-sm poppin1 text-left mr-3">
+                <div class="txPara1 poppin1 text-left mr-3">
                   Cloudox’s Tally on Cloud brings India’s popular accounting
                   software Tally to a flexible, secure cloud environment.
                   Perfect for businesses looking to streamline accounting
@@ -436,20 +427,24 @@
           </div>
         </section>
         <!-- highlight -->
-        <section class="lg:mb-20 text-center">
+        <section class="flex items-center justify-center mb-20">
           <div
-            class="container flex flex-col items-center justify-center gap-2"
+            class="container flex flex-col items-center md:items-center justify-center gap-2"
           >
-            <p class="Purpletx text-lg montserrat3 font-bold">HIGHLIGHTS</p>
+            <p class="Purpletx fontHigh montserrat3 font-bold md:mb-2 mb-3">
+              HIGHLIGHTS
+            </p>
 
-            <h2 class="montserrat1 text-5xl font-semibold text-white mb-6">
-              NVIDIA
-              <span class="Purpletx montserrat3 font-bold"
+            <h2
+              class="montserrat2 fontNvidia font-semibold text-white md:mb-8 mb-6"
+            >
+              NVIDIA <br />
+              <span class="Purpletx montserrat2 fontGpu font-bold"
                 >A100 Tensor Core GPU</span
               >
             </h2>
 
-            <p class="text-sm txSize3 modernWay openText">
+            <p class="fontPara2 txSize2 openText text-center">
               The NVIDIA A100 Tensor Core GPU is a high-performance computing
               architecture developed by NVIDIA. It is part of the company's line
               of data center GPUs designed to deliver advanced processing
@@ -458,56 +453,48 @@
           </div>
         </section>
       </section>
-
-      <section class="flex items-center justify-center mb-8">
-        <div
-          class="lg:py-12 md:py-6 py-2 md:txSize sm:txSize6 text-white text-start"
-        >
+      <!-- LLM Section -->
+      <section class="flex items-center justify-center mb-20">
+        <div class="text-white text-start txLlm">
           <div
-            class="container grid md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8"
+            class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
           >
-            <div
-              class="flex flex-col items-start justify-center md:min-w-[240px]"
-            >
-              <h4 class="md:text-lg font-semibold mb-2">LLM Inference</h4>
-              <div class="flex items-center justify-center">
-                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                  30X
+            <div class="flex flex-col items-start justify-center widthMin p-2">
+              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                LLM Inference
+              </h4>
+              <div class="flex items-center gap-3 justify-center">
+                <p class="font-semibold montserrat4 fontX Purpletx">30X</p>
+                <p class="fontSide montserrat1">
+                  vs NVIDIA V100 Tensor Core GPU
                 </p>
-                <p class="text-sm">vs NVIDIA V100<br />Tensor <br />Core GPU</p>
               </div>
             </div>
-            <div
-              class="flex flex-col items-start justify-center md:min-w-[240px]"
-            >
-              <h4 class="md:text-lg font-semibold mb-2">LLM Training</h4>
-              <div class="flex items-center justify-center">
-                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                  04X
-                </p>
-                <p class="text-sm">vs NVIDIA V100</p>
+            <div class="flex flex-col items-start justify-center widthMin p-2">
+              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                LLM Training
+              </h4>
+              <div class="flex items-center gap-3 justify-center">
+                <p class="font-semibold montserrat4 fontX Purpletx">04X</p>
+                <p class="fontSide montserrat1">vs NVIDIA V100</p>
               </div>
             </div>
-            <div
-              class="flex flex-col items-start justify-center md:min-w-[240px]"
-            >
-              <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
-              <div class="flex items-center justify-center">
-                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                  25X
-                </p>
-                <p class="text-sm">vs NVIDIA V100</p>
+            <div class="flex flex-col items-start justify-center widthMin p-2">
+              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                Energy Efficiency
+              </h4>
+              <div class="flex items-center gap-3 justify-center">
+                <p class="font-semibold montserrat4 fontX Purpletx">25X</p>
+                <p class="fontSide montserrat1">vs NVIDIA V100</p>
               </div>
             </div>
-            <div
-              class="flex flex-col items-start justify-center md:min-w-[240px]"
-            >
-              <h4 class="md:text-lg font-semibold mb-2">Energy Efficiency</h4>
-              <div class="flex items-center justify-center">
-                <p class="md:text-5xl text-4xl font-semibold Purpletx mr-2">
-                  18X
-                </p>
-                <p class="text-sm">vs CPU</p>
+            <div class="flex flex-col items-start justify-center widthMin p-2">
+              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                Energy Efficiency
+              </h4>
+              <div class="flex items-center gap-3 justify-center">
+                <p class="font-semibold montserrat4 fontX Purpletx">18X</p>
+                <p class="fontSide montserrat1">vs CPU</p>
               </div>
             </div>
           </div>
@@ -533,30 +520,36 @@
 
       <section>
         <div class="flex items-center justify-center mb-20">
-          <div class="flex flex-col items-start justify-center gap-4 txSize1">
-            <h1 class="montserrat2 uppercase font-bold text-lg Purpletx">
+          <div class="flex flex-col items-start justify-center txSize">
+            <h1
+              class="montserrat2 uppercase font-bold fontCore Purpletx md:mb-8 mb-6"
+            >
               Performance at the Core
             </h1>
-            <h1 class="montserrat1 font-semibold text-4xl leading-10">
+            <h1 class="montserrat1 font-semibold fontEverything md:mb-8 mb-6">
               Foundation of Everything We Do<br /><span
-                class="montserrat3 Purpletx font-semibold"
+                class="montserrat3 Purpletx fontBoosting font-semibold"
                 >Boosting High Performance Efficiency by 48%<br />with Advanced
                 Cooling Technology
               </span>
             </h1>
-            <p class="text-sm montserrat txSize7">
+            <p class="fontPara3 openText md:mb-8 mb-6">
               We're not just innovating in AI; we’re redefining performance.
               Cloudox is engineered for peak efficiency, with state-of-the-art
               cooling systems that keep your systems running smoothly, reducing
               downtime and maximizing speed and power for all workloads.
             </p>
-            <div class="flex items-start gap-4">
-              <img class="md:h-5 mt-1" src="./images/circle-check.png" alt="" />
+            <div class="flex items-start gap-4 md:mb-8 mb-6">
+              <img
+                class="md:h-5 h-6 mt-1"
+                src="./images/circle-check.png"
+                alt=""
+              />
               <div class="flex flex-col items-start justify-center gap-2">
-                <h1 class="montserrat3 font-bold text-lg">
+                <h1 class="montserrat3 font-bold fontHign">
                   Optimized for High Performance
                 </h1>
-                <p class="openText text-sm txSize3">
+                <p class="openText fontPara4 txSize3">
                   By optimizing energy usage, we’re reducing carbon emissions
                   and operational costs, making your AI deployments more
                   sustainable.
@@ -564,25 +557,29 @@
               </div>
             </div>
 
-            <div class="flex flex-row items-start gap-4">
-              <img class="md:h-5 mt-1" src="./images/circle-check.png" alt="" />
+            <div class="flex flex-row items-start gap-4 md:mb-8 mb-6">
+              <img
+                class="md:h-5 h-6 mt-1"
+                src="./images/circle-check.png"
+                alt=""
+              />
               <div class="flex flex-col items-start justify-center gap-2">
-                <h1 class="montserrat3 font-bold text-lg">
+                <h1 class="montserrat3 font-bold fontHign">
                   Strong Partnerships for Maximum Power
                 </h1>
-                <p class="openText text-sm txSize3">
+                <p class="openText fontPara4 txSize3">
                   We partner with energy-efficient technology providers to
                   ensure your AI workloads are powered responsibly.
                 </p>
               </div>
             </div>
-            <button class="bg-white montserrat text-sm">
+            <button class="bg-white rounded-none">
               <div
-                class="flex text-black gap-2 items-center justify-center font-semibold"
+                class="flex text-black gap-2 items-center fontLaunchBtn py-1 justify-center font-semibold"
               >
                 Read More
                 <svg
-                  class="md:h-4 h-3"
+                  class="md:h-3 h-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
                 >

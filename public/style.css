@@ -14,7 +14,7 @@ html {
 }
 .openText{
     font-family: "Open Sans";
-    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;  
 }
 .poppin{
@@ -47,8 +47,21 @@ html {
   font-weight: 600;
   font-style: normal;
 }
-
-
+.montserrat4{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+}
+.montserrat5{
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+}
+.montserrat6{
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+}
 @media (max-width: 640px) {
   .fontSize12 {
     font-size: 12px; /* Font size for small to medium screens (sm) */
@@ -80,18 +93,23 @@ html {
     font-size: 50px;
     line-height: 50px;
   }
-  .txSize{
+  .txSizeFull{
     width: 100%;
+  }
+  .txSize{
+    width: 90%;
+  }
+  .txLlm{
+    width: 70%;
+    
   }
   .txSize1{
     width: 90%;
   }
   .txSize2{
-    width: 60%;
+    width: 85%;
   }
-  .txSize3{
-    width: 50%;
-  }
+ 
   .txSize4{
     width: 87%;
   }
@@ -104,17 +122,135 @@ html {
   .txSize7{
     width: 58%;
   }
-  .txSize8{
-    width: 30%;
-  }
   .HeightImg {
     height: 30px;
   }
+  .txSize8{
+    width: 30%;
+  }
+  .fontJoin{
+    font-size: 24px;
+  }
+  .fontLaunchBtn{
+    font-size: 15px;
+  }
+  .fontDiscover{
+    font-size: 17px;
+  }
+.fontRevolution{
+  font-size: 28px;
+}
+.sizeRevolution{
+  width: 85%;
+}
+.sizeRevolutionInner{
+  width: 85%;
+}
+.fontSuper{
+  font-size: 47px;
+  line-height: 58px;
+}
+.fontIntroducing{
+  font-size: 18px;
+  line-height: 28px;
+  width: 82%;
+}
+.fontLLM{
+  font-size: 18px;
+  line-height: 28px;
+}
+.fontX{
+  font-size: 56px;
+  line-height: 47px;
+}
+.fontSide{
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+
+.fontOne{
+  font-size: 38px;
+  line-height: 56px;
+}
+.txHi{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.txPara1{
+  font-size: 13px;
+  line-height: 17px;
+}
+.video-container {
+  width: 373px; 
+  height: 308px;
+}
+.fontCore{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.fontEverything{
+  font-size: 29px;
+        line-height: 33px;
+        font-weight: 400;
+       
+}
+.fontBoosting{
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: 600;
+  
+}
+.fontPara3{
+  font-size: 14px;
+  line-height: 16px;
+  
+}
+.fontHign{
+  font-size: 16px;
+  line-height: 18px;
+}
+.fontPara4{
+  font-size: 14px;
+  line-height: 14px;
+}
+.fontHigh {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+}
+.fontNvidia{
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+}
+.fontGpu{
+  font-size: 32px;
+        line-height: 34px;
+  font-weight: 700;
+}
+.fontPara2{
+  font-size: 15px;
+        line-height: 19px;
+}
 }
 
 @media (min-width: 641px) {
   .fontSize12 {
     font-size: 15px; /* Font size for medium screens (md) */
+  }
+  .txHi{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .txPara1{
+    font-size: 17px;
+    line-height: 22px;
   }
   .fontSize10 {
     font-size: 12px;
@@ -124,9 +260,7 @@ html {
     font-size: 15px;
   }
 
-  .fontSize16 {
-    font-size: 18px;
-  }
+ 
   .fontSize18 {
     font-size: 20px;
   }
@@ -143,11 +277,21 @@ html {
     font-size: 54px;
     line-height: 65px;
   }
+  .txSizeFull{
+    width: 100%;
+  }
   .txSize{
     width: 90%;
   }
+  .txLlm{
+    width: 70%;
+    
+  }
   .txSize1{
     width: 80%;
+  }
+  .txImg{
+    width: 55%;
   }
   .txSize2{
     width: 85%;
@@ -176,7 +320,51 @@ html {
   .HeightImg {
     height: 40px;
   }
- 
+  .fontJoin{
+    font-size: 24px;
+  }
+  .fontLaunchBtn{
+    font-size: 15px;
+  }
+  .fontDiscover{
+    font-size: 17px;
+  }
+.fontRevolution{
+  font-size: 28px;
+}
+.sizeRevolution{
+  width: 85%;
+}
+.sizeRevolutionInner{
+  width: 85%;
+}
+.fontSuper{
+  font-size: 47px;
+  line-height: 58px;
+}
+.fontIntroducing{
+  font-size: 18px;
+  line-height: 28px;
+  width: 82%;
+}
+.fontLLM{
+  font-size: 18px;
+  line-height: 28px;
+}
+.fontX{
+  font-size: 51px;
+  line-height: 32px;
+}
+.fontSide{
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.fontOne{
+  font-size: 33px;
+  line-height: 60px;
+}
 }
 
 @media (min-width: 769px) {
@@ -236,6 +424,59 @@ html {
   }
   }
 @media (min-width: 1024px) {
+  .gradientBorderB {
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(45deg, rgba(20, 19, 21, 1)0%, rgba(246, 246, 246, 1)100%);
+    border-image-slice: 1; 
+  }
+  .gradientBorderB2 {
+    border-bottom: 2px solid; 
+    border-image-source: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(20, 19, 21, 1) 100%);
+    border-image-slice: 1; 
+  }
+  .gradientBorderR {
+    border-right: 2px solid; 
+    border-image-source: linear-gradient(180deg, rgba(20, 19, 21, 1) 0%, rgba(246, 246, 246, 1) 100%);
+    border-image-slice: 1; 
+  }
+  
+  .gradientBorderR2 {
+    border-right: 2px solid; 
+   
+    border-image-source: linear-gradient(360deg,  rgba(20, 19, 21, 1)0%,  rgba(246, 246, 246, 1)100%);
+    border-image-slice: 1;
+  }
+  .txHi{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .txPara1{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .fontHigh {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .fontNvidia{
+    font-size: 62px;
+    line-height: 64px;
+    font-weight: 500;
+  }
+  .fontGpu{
+    font-size: 62px;
+    line-height: 64px;
+    font-weight: 700;
+  }
+  .fontPara2{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .txSize5{
+    width: 54%;
+  }
   .fontSize12 {
     font-size: 17px; /* Font size for large screens (lg) */
   }
@@ -257,16 +498,82 @@ html {
   .fontSize20 {
     font-size: 24px;
   }
+  .fontJoin{
+    font-size: 24px;
+  }
+  .fontLaunchBtn{
+    font-size: 15px;
+  }
+  .fontDiscover{
+    font-size: 17px;
+  }
+.fontRevolution{
+  font-size: 28px;
+}
+.sizeRevolution{
+  width: 85%;
+}
+.sizeRevolutionInner{
+  width: 85%;
+}
+.fontSuper{
+  font-size: 47px;
+  line-height: 58px;
+}
+.fontIntroducing{
+  font-size: 18px;
+  line-height: 28px;
+  width: 82%;
+}
+.fontLLMmain{
+  font-size: 13px;
+}
+.fontLLM{
+  font-size: 16px;
+  line-height: 43px;
+  
+}
+.fontX{
+  font-size: 64px;
+  line-height: 32px;
+  
+}
+.fontSide{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
 
   .fontSize24 {
-    font-size: 33px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .fontSize30 {
-    font-size: 70px;
+    font-size: 88px;
+    line-height: 100px;
+    padding-bottom: 0px;
   }
+ 
+    .video-container {
+      width: 1200px; 
+    height: 680px;
+    }
+  
+   
+ 
+  
+    
+ 
+  
+ 
   .txSize{
     width: 90%;
+  }
+
+  .txLlm{
+    width: 80%;
   }
   .txSize1{
     width: 80%;
@@ -284,7 +591,7 @@ html {
     width: 77%;
   }
   .txSize2{
-    width: 81%;
+    width: 85%;
   }
   .txSize3{
     width: 50%;
@@ -292,9 +599,7 @@ html {
   .txSize4{
     width: 87%;
   }
-  .txSize5{
-    width: 53%;
-  }
+  
   .txSize6{
     width: 37%;
   }
@@ -304,7 +609,45 @@ html {
   .txSize8{
     width: 30%;
   }
-  
+  .marzn{
+    padding-top: 120px;
+  }
+  .fontOne{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .fontCore{
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+  .fontEverything{
+    font-size: 39px;
+    line-height: 51px;
+    font-weight: 400;
+  }
+  .fontBoosting{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    
+  }
+  .fontPara3{
+    font-size: 19px;
+        line-height: 26px;
+        font-weight: 500;
+        width: 65%;
+        
+  }
+  .fontHign{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .fontPara4{
+    font-size: 17px;
+    line-height: 26px;
+
+  }
 }
 @media (min-width: 1240px) {
 .HeightImg {
@@ -318,6 +661,10 @@ html {
 }
 .HeightImg {
   height: 50px;
+}
+
+.txLlm{
+  width: 80%;
 }
 }
 
@@ -395,6 +742,8 @@ html {
 }
 .bgImgHead{
   background-image: url("./images/Navbar/bgImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Purpletx{
@@ -414,6 +763,8 @@ color: #743A91;
 }
   #Home{
     background-image: url("./images/Navbar/bgImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .bgGradient{
   background: rgb(117,88,216);
@@ -436,7 +787,11 @@ color: #743A91;
       } 
   .borderLeft{
     border-left: 2px solid rgb(175,82,222);
+    
   }
+  
+ 
+
 .nvideaSpac{
   display: flex;
   flex-direction: column;
@@ -457,19 +812,7 @@ color: #743A91;
   overflow: hidden;
   position: relative;
 }
-@media (min-width: 577px) {
-  .video-container {
-    width: 1080px; 
-  height: 480px;
-  }
 
-}
-@media (max-width: 576px) {
-  .video-container {
-    width: 100%; 
-    height: 200px;
-  }
-}
 video {
   width: 100%;
   height: 100%;
@@ -493,18 +836,24 @@ video {
 
 .gridIMG{
   background-image: url("./images/Arch/ArchSystem.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .machine{
   background-image: url("./images/MidWave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .ready{
   background-image: url("./images/systemGrid.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .gridFull{
   background-image: url("./images/ready1.png");
   background-size: cover;
-  /* background-position: center; */
+  background-repeat: no-repeat;
+ 
 }
 .marjin{
   height: 800px;
@@ -668,6 +1017,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    padding-top: 2rem;
     background-color: transparent;
     color: #fff;
     
