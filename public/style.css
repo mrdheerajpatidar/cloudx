@@ -12,6 +12,11 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
 }
+.univer{
+  background-color: #171717;
+  line-height: normal;
+
+}
 .openText{
     font-family: "Open Sans";
     font-weight: 400;
@@ -62,7 +67,11 @@ html {
   font-weight: 900;
   font-style: normal;
 }
-
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 
 .nav-item {
   list-style: none;
@@ -82,18 +91,15 @@ html {
 .nav-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
   
 }
 
-.signup-btn,
-.login-btn {
-  padding: 0.5rem 1rem;
-  
-  /* border-radius: 5px; */
-  text-decoration: none;
-  text-align: center;
-}
 
+.marzin{
+  margin-left: auto;
+}
 .signup-btn {
   background: rgb(111, 58, 197);
       background: linear-gradient(90deg, #563692 0%, #7558D8 100%);
@@ -151,7 +157,14 @@ html {
     flex-direction: column;
     gap: 1rem;
   }
-
+  .signup-btn,
+  .login-btn {
+    /* padding: 0.5rem 1rem; */
+    
+    /* border-radius: 5px; */
+    text-decoration: none;
+    text-align: center;
+  }
   .hamburger {
     display: flex;
   }
@@ -191,12 +204,32 @@ html {
   .fontSize20{
     font-size: 20px;
   }
+  .fontSizeAi{
+    font-size: 15px;
+    line-height: 41px;
+    font-weight: 700;
+
+  }
+  .machine{
+    background-image: url("./images/MidWave.png"), linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.09));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;            
+  }
+  .txImg{
+    width: 77%;
+  }
   .fontSize24{
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 20px;
+    color: #bababa;
+    line-height: 22px;
+
+   
   }
   .fontSize30 {
     font-size: 50px;
+    text-align: left;
+    width: 70%;
     line-height: 50px;
   }
   .txSizeFull{
@@ -229,23 +262,20 @@ html {
     width: 58%;
   }
   .HeightImg {
-    height: 34px;
+    height: 47px;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    padding-top: 2rem;
+   margin-bottom: 50px;
+    padding-top: 1.2rem;
     background-color: transparent;
     color: #fff;
+    
   }
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .txSize8{
+ 
+  .fontBtn{
     width: 30%;
   }
   .fontJoin{
@@ -313,7 +343,7 @@ html {
   line-height: 17px;
 }
 .video-container {
-  width: 373px; 
+  width: 98vw; 
   height: 308px;
 }
 .fontCore{
@@ -411,16 +441,53 @@ font-weight: 700;
   font-size: 13px;
   line-height: 15px;
 }
+.backGroundSystem{
+  background-image: url("./images/Arch/newBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: bottom;
+
 }
+.spacing{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 54%;
+
+}
+.readyHight{
+  padding-top: 101px;
+  padding-bottom: 76px;
+  width: 100%;
+}
+.fontReady{
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  width: 45%;
+}
+.fontConversation{
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+}
+.fontPara6{
+  font-size: 6px;
+  line-height: 7px;
+  font-weight: 400;
+  width: 100px;
+}
+.fontRedMBtn{
+  font-size: 7px;
+  
+    }
+  
+}
+
 
 @media (min-width: 641px) {
   .fontSize12 {
     font-size: 15px; /* Font size for medium screens (md) */
-  }
-  .txHi{
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
   }
   .txPara1{
     font-size: 17px;
@@ -447,10 +514,7 @@ font-weight: 700;
     font-size: 28px;
     line-height: 28px;
   }
-  .fontSize30 {
-    font-size: 54px;
-    line-height: 65px;
-  }
+
   .txSizeFull{
     width: 100%;
   }
@@ -464,9 +528,7 @@ font-weight: 700;
   .txSize1{
     width: 80%;
   }
-  .txImg{
-    width: 55%;
-  }
+ 
   .txSize2{
     width: 85%;
   }
@@ -488,8 +550,11 @@ font-weight: 700;
   .txSize8{
     width: 30%;
   }
-  .fontSize8 {
-    font-size: 18px;
+  .fontLink{
+    width: 30%;
+  }
+  .fontBtn{
+    width: 30%;
   }
   .HeightImg {
     height: 40px;
@@ -508,10 +573,7 @@ font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
-.fontX{
-  font-size: 51px;
-  line-height: 32px;
-}
+
 .fontSide{
   font-size: 13px;
   line-height: 22px;
@@ -524,78 +586,35 @@ font-weight: 700;
 }
 }
 
-@media (min-width: 769px) {
-
-
-  .fontSize8 {
-    font-size: 11px;
-  }
-  .HeightImg {
-    height: 32px;
-  }
-  .txSize11{
-    width: 20%;
-  }
-  .txSize12{
-    width: 80%;
-  }
-  .marzin{
-    margin-left: auto;
-  }
-
-}
-@media (min-width: 836px) {
-
-  .fontSize8 {
-    font-size: 13px;
-  }
-  .HeightImg {
-    height: 35px;
-  }
-  .txSize11{
-    width: 23%;
-  }
-  .txSize12{
-    width: 77%;
-  }
-  .marzin{
-    margin-left: auto;
-  }
-  }
-@media (min-width: 905px) {
-
-  .fontSize8 {
-    font-size: 14px;
-  }
-  .HeightImg {
-    height: 37px;
-  }
-  .txSize11{
-    width: 23%;
-  }
-  .txSize12{
-    width: 77%;
-  }
-  .marzin{
-    margin-left: auto;
-  }
-  }
 @media (min-width: 1024px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    padding-top: 2rem;
+    
     background-color: transparent;
     color: #fff;
     
   }
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+  .machine{
+ 
+    /* background-image: url("./images/MidWave.png"), linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.09));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: start; */
+
+    background-image: 
+    url("./images/MidWave.png"), 
+    radial-gradient(circle, rgba(255, 255, 255,0.08) 50%, rgba(255, 255, 255, 0.08) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay; 
+    
+                    
+  }
+  .txImg{
+    width: 77%;
   }
   .gradientBorderB {
     border-bottom: 2px solid;
@@ -620,18 +639,21 @@ font-weight: 700;
     border-image-slice: 1;
   }
   .txHi{
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 600;
   }
   .txPara1{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
+    font-weight: 400;
+color: #FFF;
   }
 
   .fontHigh {
-    font-size: 30px;
-    line-height: 32px;
-    font-weight: 700;
+    font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
   }
   .fontNvidia{
     font-size: 62px;
@@ -672,7 +694,8 @@ font-weight: 700;
     font-size: 24px;
   }
   .fontJoin{
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 600;
   }
   .fontLaunchBtn{
     font-size: 15px;
@@ -707,8 +730,9 @@ font-weight: 700;
   
 }
 .fontX{
-  font-size: 64px;
-  line-height: 32px;
+  font-size: 63px;
+  line-height: 66px;
+  font-weight: 600;
   
 }
 .fontSide{
@@ -719,18 +743,17 @@ font-weight: 700;
 
 
   .fontSize24 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 38px;
   }
 
   .fontSize30 {
-    font-size: 88px;
-    line-height: 100px;
-    padding-bottom: 0px;
+    font-size: 75px;
+    line-height: 75px;
   }
  
     .video-container {
-      width: 1200px; 
+      width: 98vw; 
     height: 680px;
     }
     .gridSize{
@@ -754,10 +777,6 @@ font-weight: 700;
   font-size: 14px;
         line-height: 20px;
  }
-  
-    
- 
-  
  
   .txSize{
     width: 90%;
@@ -769,17 +788,32 @@ font-weight: 700;
   .txSize1{
     width: 80%;
   }
-  .fontSize8 {
-    font-size: 18px;
+  .fontLink{
+    font-size: 20px;
+  }
+  .fontBtn{
+    
+ font-size: 15px;
+ font-weight: 500;
+ line-height: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+  .fontSign{
+    font-size: 15px;
+    
+    width: fit-content;
+    font-weight: 500;
   }
   .HeightImg {
-    height: 40px;
+    height: 56px;
   }
   .txSize11{
     width: 23%;
   }
   .txSize12{
-    width: 77%;
+    width: 71%;
   }
   .txSize2{
     width: 85%;
@@ -808,9 +842,9 @@ font-weight: 700;
     line-height: 50px;
   }
   .fontCore{
-    font-size: 23px;
-    line-height: 25px;
-    font-weight: 700;
+    font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
   }
   .fontEverything{
     font-size: 44px;
@@ -819,27 +853,26 @@ font-weight: 700;
   }
   .fontBoosting{
     font-size: 45px;
-    line-height: 48px;
-
-    font-weight: 700;
-    
+        line-height: 54px;
+        font-weight: 600;
   }
   .fontPara3{
-    font-size: 19px;
-    line-height: 23px;
- color: #DADADA;
-        font-weight: 500;
-        width: 65%;
-        
+    font-size: 16px;
+    line-height: 26px;
+    color: #DADADA;
+    font-weight: 400;
+    width: 65%;
   }
   .fontHign{
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 19px;
+        line-height: 33px;
+        font-weight: 600;
   }
   .fontPara4{
     font-size: 17px;
-    line-height: 26px;
+    line-height: 24px;
     color: #DADADA;
+    width: 46%;
   }
   .fontFeatures{
     font-size: 22px;
@@ -848,22 +881,37 @@ font-weight: 700;
 
   }
   .fontModel{
-    font-size: 62px;
-        line-height: 64px;
+    font-size: 54px;
+        line-height: 60px;
         font-weight: 400;
-  }
+    }
   .fontModel2{
-    font-size: 62px;
-        line-height: 64px;
-        font-weight: 700;
+    font-size: 54px;
+    line-height: 68px;
+    font-weight: 600;
   }
   .fontPara5{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 22px;
-
- color: #DADADA;
+    color: #DADADA;
+  }
+  .backGroundSystem{
+    background-image: url("./images/Arch/newBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: bottom;
+  
+  }
+  .spacing{
+    padding-top: 100px;
+    padding-bottom: 110px;
+  
   }
 }
+
+
+
 @media (min-width: 1240px) {
 .HeightImg {
   height: 50px;
@@ -900,7 +948,7 @@ font-weight: 700;
     width: 30%;
   }
   .txSize12{
-    width: 70%;
+    width: 65%;
   }
   .fontSize14 {
     font-size: 20px;
@@ -955,11 +1003,7 @@ font-weight: 700;
 .textLeft{
   text-align: left;
 }
-.bgImgHead{
-  background-image: url("./images/Navbar/bgImg.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-}
+
 #Home{
   background-image: url("./images/Navbar/bgImg.png");
   background-size: cover;
@@ -967,7 +1011,7 @@ font-weight: 700;
 }
 
 .Purpletx{
-  color: rgb(175,82,222)  ;
+  color: rgb(175,82,222);
 }
 .Bluetx{
   color: #8156D9;
@@ -1055,11 +1099,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.machine{
-  background-image: url("./images/MidWave.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .ready{
   background-image: url("./images/systemGrid.png");
   background-size: cover;
@@ -1114,16 +1154,8 @@ background-repeat: no-repeat;
 position: relative;
 z-index: 14;
 }
-.spacing{
-  padding-top: 100px;
-  padding-bottom: 110px;
 
-}
-.spacing1{
-  padding-top: 60px;
-  padding-bottom: 60px;
 
-}
 .background {
   position: absolute;
   top: 0;
@@ -1135,22 +1167,8 @@ z-index: 14;
   opacity: 0.3;
   z-index: 2;
 }
-.backGround2{
-  background-image: url("./images/Arch/newBg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: bottom;
 
-}
-.backGround3{
-  background-image: url("./images/Arch/newBg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: bottom;
 
-}
 
 
 /* Achievements Section */
@@ -1226,3 +1244,6 @@ button {
   position: absolute;
   bottom: 0;
 }
+
+  
+ 

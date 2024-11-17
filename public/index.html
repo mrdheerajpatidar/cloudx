@@ -15,11 +15,10 @@
     <script src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <div class="bg-black text-white">
+    <div class="univer">
       <header id="Home">
-        <div class="bgImgHead flex flex-col items-center justify-center mb-20">
-          <nav class="navbar md:txSize txSizeFull">
-            <!-- Logo -->
+        <div class="flex flex-col items-center justify-center">
+          <nav class="navbar md:txSize txSizeFull mb-20 py-10 md:pr-5">
             <a href="#" class="nav-logo txSize11">
               <img
                 class="HeightImg"
@@ -33,28 +32,28 @@
               <li class="nav-item">
                 <a
                   href="#Home"
-                  class="nav-link montserrat1 fontSize8 font-semibold"
+                  class="nav-link montserrat1 fontLink font-semibold"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   href="#About"
-                  class="nav-link montserrat1 fontSize8 font-semibold"
+                  class="nav-link montserrat1 fontLink font-semibold"
                   >About Us</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   href="#Services"
-                  class="nav-link montserrat1 fontSize8 font-semibold"
+                  class="nav-link montserrat1 fontLink font-semibold"
                   >Services</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   href="#GPU"
-                  class="nav-link montserrat1 fontSize8 font-semibold"
+                  class="nav-link montserrat1 fontLink font-semibold"
                   >GPU CLOUD</a
                 >
               </li>
@@ -62,12 +61,12 @@
               <div class="nav-buttons marzin">
                 <a
                   href="#"
-                  class="signup-btn montserrat1 fontSize8 font-semibold"
+                  class="fontSign signup-btn px-5 py-3 montserrat1 font-semibold"
                   >Sign Up</a
                 >
                 <a
                   href="#"
-                  class="login-btn montserrat1 fontSize8 font-semibold"
+                  class="login-btn px-5 py-3 montserrat1 fontSign font-semibold"
                   >Login</a
                 >
               </div>
@@ -81,21 +80,23 @@
           </nav>
 
           <section
-            class="flex flex-col items-center justify-center marzn text-center"
+            class="flex flex-col items-center justify-center text-center"
           >
-            <h1 class="bgGradient montserrat3 fontSize30 font-semibold mb-9">
+            <h1 class="bgGradient montserrat3 fontSize30 font-semibold mb-6">
               The AI developer cloud
             </h1>
-            <h2 class="fontSize24 montserrat2 mb-9">
-              Supercharging Next-Generation<span class="font-bold montserrat3">
+            <h2 class="fontSize24 montserrat2 mb-3">
+              Supercharging Next-Generation<span
+                class="md:inline block fontSizeAi font-bold montserrat3"
+              >
                 AI & Acceleration Computing</span
               >
             </h2>
-            <p class="Purpletx font-semibold fontJoin capitalize mb-5">
+            <p class="Purpletx font-semibold fontJoin capitalize mb-6">
               Join Revolution with Cloudox
             </p>
 
-            <button class="bg-white py-5 rounded-none mb-10">
+            <button class="bg-white py-5 rounded-none mb-12">
               <div
                 class="flex gap-2 items-center fontLaunchBtn font-semibold montserrat1 text-black justify-center"
               >
@@ -113,7 +114,7 @@
             </button>
 
             <div class="">
-              <p class="fontDiscover">Discover More</p>
+              <p class="fontDiscover mb-10">Discover More</p>
             </div>
             <!-- <div class="containerArrow">
               <div class="circle">
@@ -142,11 +143,11 @@
         </div>
       </header>
 
-      <section class="machine">
-        <section class="flex items-center justify-center mb-32">
+      <section class="machine mb-24">
+        <section class="flex items-center justify-center pb-24">
           <div class="flex items-center sizeRevolution justify-start">
             <div
-              class="container flex flex-col sizeRevolutionInner items-start gap-6 justify-center"
+              class="container flex flex-col sizeRevolutionInner items-start gap-4 justify-center"
             >
               <h2 class="fontRevolution Purpletx montserrat3 font-bold">
                 Revolution with NVIDIA A100 Tensor Core GPU
@@ -187,7 +188,7 @@
         </section>
 
         <!-- LLM Section -->
-        <section class="flex items-center justify-center">
+        <section class="flex items-center justify-center mb-24">
           <div class="text-white text-start txLlm">
             <div
               class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
@@ -195,9 +196,7 @@
               <div
                 class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                  LLM Inference
-                </h4>
+                <h4 class="font-semibold montserrat3 fontLLM">LLM Inference</h4>
                 <div class="flex items-center gap-3 justify-center">
                   <p class="font-semibold montserrat4 fontX Purpletx">30X</p>
                   <p class="fontSide montserrat1">
@@ -208,9 +207,7 @@
               <div
                 class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                  LLM Training
-                </h4>
+                <h4 class="font-semibold montserrat3 fontLLM">LLM Training</h4>
                 <div class="flex items-center gap-3 justify-center">
                   <p class="font-semibold montserrat4 fontX Purpletx">04X</p>
                   <p class="fontSide montserrat1">vs NVIDIA V100</p>
@@ -219,7 +216,7 @@
               <div
                 class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                <h4 class="font-semibold montserrat3 fontLLM">
                   Energy Efficiency
                 </h4>
                 <div class="flex items-center gap-3 justify-center">
@@ -230,7 +227,7 @@
               <div
                 class="flex flex-col items-start justify-center widthMin p-2"
               >
-                <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
+                <h4 class="font-semibold montserrat3 fontLLM">
                   Energy Efficiency
                 </h4>
                 <div class="flex items-center gap-3 justify-center">
@@ -242,15 +239,15 @@
           </div>
         </section>
         <!-- Image Section -->
-        <section class="ready flex my-40 items-center justify-center">
-          <img class="txImg pt-32" src="./images/BigServer.png" alt="" />
+        <section class="ready flex items-center justify-center mb-24">
+          <img class="txImg" src="./images/BigServer.png" alt="" />
         </section>
 
         <section id="GPU" class="mb-32">
           <div
             class="container txSize mx-auto text-center flex flex-col items-center justify-center"
           >
-            <h2 class="fontOne montserrat2 font-semibold text-white mb-36">
+            <h2 class="fontOne montserrat2 font-semibold text-white mb-24">
               One Platform<span class="font-semibold Purpletx"
                 >, Multiple Options</span
               >
@@ -259,11 +256,11 @@
               class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-0 gap-20 pl-10 md:pl-0 justify-center"
             >
               <div
-                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderB gradientBorderR"
+                class="flex flex-col justify-between items-start gap-6 md:pb-8 md:pl-8 gradientBorderB gradientBorderR"
               >
                 <div class="ml-2">
                   <img
-                    class="h-20 md:h-full"
+                    class="h-18"
                     src="./images/MultiOption/one1.png"
                     alt=""
                   />
@@ -301,11 +298,11 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderB2"
+                class="flex flex-col justify-between items-start gap-6 md:pb-8 md:pl-8 gradientBorderB2"
               >
                 <div class="ml-2">
                   <img
-                    class="h-19 md:h-full"
+                    class="h-20"
                     src="./images/MultiOption/one2.png"
                     alt=""
                   />
@@ -342,11 +339,11 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8 gradientBorderR2"
+                class="flex flex-col justify-between items-start gap-6 md:py-8 md:p-2 md:pl-8 gradientBorderR2"
               >
                 <div class="ml-2">
                   <img
-                    class="h-18 md:h-full"
+                    class="h-18"
                     src="./images/MultiOption/one3.png"
                     alt=""
                   />
@@ -383,11 +380,11 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-between items-start gap-8 md:py-8 md:p-2 md:pl-8"
+                class="flex flex-col justify-between items-start gap-6 md:py-8 md:p-2 md:pl-8"
               >
                 <div class="ml-2">
                   <img
-                    class="h-18 md:h-full"
+                    class="h-18"
                     src="./images/MultiOption/one4.png"
                     alt=""
                   />
@@ -427,7 +424,7 @@
           </div>
         </section>
         <!-- highlight -->
-        <section class="flex items-center justify-center mb-20">
+        <section class="flex items-center justify-center mb-24">
           <div
             class="container flex flex-col items-center md:items-center justify-center gap-2"
           >
@@ -453,56 +450,60 @@
             </p>
           </div>
         </section>
-      </section>
-      <!-- LLM Section -->
-      <section class="flex items-center justify-center mb-20">
-        <div class="text-white text-start txLlm">
-          <div
-            class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
-          >
-            <div class="flex flex-col items-start justify-center widthMin p-2">
-              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                LLM Inference
-              </h4>
-              <div class="flex items-center gap-3 justify-center">
-                <p class="font-semibold montserrat4 fontX Purpletx">30X</p>
-                <p class="fontSide montserrat1">
-                  vs NVIDIA V100 Tensor Core GPU
-                </p>
+
+        <section class="flex items-center justify-center mb-24">
+          <div class="text-white text-start txLlm">
+            <div
+              class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
+            >
+              <div
+                class="flex flex-col items-start justify-center widthMin p-2"
+              >
+                <h4 class="font-semibold montserrat3 fontLLM">LLM Inference</h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">30X</p>
+                  <p class="fontSide montserrat1">
+                    vs NVIDIA V100 Tensor Core GPU
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-col items-start justify-center widthMin p-2">
-              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                LLM Training
-              </h4>
-              <div class="flex items-center gap-3 justify-center">
-                <p class="font-semibold montserrat4 fontX Purpletx">04X</p>
-                <p class="fontSide montserrat1">vs NVIDIA V100</p>
+              <div
+                class="flex flex-col items-start justify-center widthMin p-2"
+              >
+                <h4 class="font-semibold montserrat3 fontLLM">LLM Training</h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">04X</p>
+                  <p class="fontSide montserrat1">vs NVIDIA V100</p>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-col items-start justify-center widthMin p-2">
-              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                Energy Efficiency
-              </h4>
-              <div class="flex items-center gap-3 justify-center">
-                <p class="font-semibold montserrat4 fontX Purpletx">25X</p>
-                <p class="fontSide montserrat1">vs NVIDIA V100</p>
+              <div
+                class="flex flex-col items-start justify-center widthMin p-2"
+              >
+                <h4 class="font-semibold montserrat3 fontLLM">
+                  Energy Efficiency
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">25X</p>
+                  <p class="fontSide montserrat1">vs NVIDIA V100</p>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-col items-start justify-center widthMin p-2">
-              <h4 class="font-semibold montserrat3 md:mb-5 mb-2 fontLLM">
-                Energy Efficiency
-              </h4>
-              <div class="flex items-center gap-3 justify-center">
-                <p class="font-semibold montserrat4 fontX Purpletx">18X</p>
-                <p class="fontSide montserrat1">vs CPU</p>
+              <div
+                class="flex flex-col items-start justify-center widthMin p-2"
+              >
+                <h4 class="font-semibold montserrat3 fontLLM">
+                  Energy Efficiency
+                </h4>
+                <div class="flex items-center gap-3 justify-center">
+                  <p class="font-semibold montserrat4 fontX Purpletx">18X</p>
+                  <p class="fontSide montserrat1">vs CPU</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
-      <section class="flex items-center justify-center mb-20">
+      <section class="flex items-center justify-center mb-24">
         <div class="gradient-border">
           <div class="video-container">
             <video id="myVideo" poster="./images/Video/VideoBg.png">
@@ -519,12 +520,10 @@
         </div>
       </section>
 
-      <section>
+      <section class="mb-24">
         <div class="flex items-center justify-center mb-20">
           <div class="flex flex-col items-start justify-center txSize">
-            <h1
-              class="montserrat2 uppercase font-bold fontCore Purpletx md:mb-8 mb-6"
-            >
+            <h1 class="montserrat2 uppercase font-bold fontCore Purpletx mb-4">
               Performance at the Core
             </h1>
             <h1 class="montserrat1 font-semibold fontEverything md:mb-8 mb-6">
@@ -550,7 +549,7 @@
                 <h1 class="montserrat3 font-bold fontHign">
                   Optimized for High Performance
                 </h1>
-                <p class="openText fontPara4 txSize3">
+                <p class="openText fontPara4">
                   By optimizing energy usage, we’re reducing carbon emissions
                   and operational costs, making your AI deployments more
                   sustainable.
@@ -568,7 +567,7 @@
                 <h1 class="montserrat3 font-bold fontHign">
                   Strong Partnerships for Maximum Power
                 </h1>
-                <p class="openText fontPara4 txSize3">
+                <p class="openText fontPara4">
                   We partner with energy-efficient technology providers to
                   ensure your AI workloads are powered responsibly.
                 </p>
@@ -594,8 +593,8 @@
         </div>
       </section>
 
-      <section id="Services">
-        <div class="flex items-center justify-center mb-20">
+      <section id="Services" class="mb-24">
+        <div class="flex items-center justify-center">
           <div
             class="txSize container flex flex-col items-center justify-center gap-2"
           >
@@ -604,7 +603,7 @@
             >
               Features
             </h1>
-            <h1 class="montserrat2 fontModel md:mb-7 mb-2">
+            <h1 class="montserrat2 fontModel md:mb-4 mb-2">
               Experience Cloudox’s <br />
               <span class="montserrat4 fontModel2 Purpletx font-semibold"
                 >Value Benefit Model</span
@@ -619,7 +618,7 @@
             <div class="">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web1.png" alt="" />
 
@@ -652,7 +651,7 @@
                 </div>
 
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web2.png" alt="" />
 
@@ -684,7 +683,7 @@
                 </div>
 
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web3.png" alt="" />
 
@@ -716,7 +715,7 @@
                 </div>
 
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web4.png" alt="" />
 
@@ -749,7 +748,7 @@
                 </div>
 
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web5.png" alt="" />
 
@@ -782,7 +781,7 @@
                 </div>
 
                 <div
-                  class="bgGradient2 flex flex-col items-start justify-center gap-4"
+                  class="bgGradient2 flex flex-col items-start justify-between gap-4"
                 >
                   <img class="h-12" src="./images/Benefit/web6.png" alt="" />
 
@@ -819,7 +818,7 @@
         </div>
       </section>
 
-      <section class="relative backGround2 md:backGround3">
+      <section class="relative backGroundSystem">
         <div class="flex items-center justify-center flex-col">
           <p
             class="fontAchiev md:mb-10 mb-4 text-center Bluetx2 font-semibold tracking-wide uppercase"
@@ -876,36 +875,36 @@
             </div>
           </div>
 
-          <div class="lg:my-36 my-12">
+          <div class="readyHight">
             <div class="flex items-center justify-end">
-              <div class="txSize5 sm:spacing1 md:spacing">
-                <h1 class="lg:text-4xl md:text-lg text-sm font-normal">
-                  Ready to Start the<br />
-                  <span class="Bluetx1 font-bold">Conversation?</span>
+              <div class="spacing">
+                <h1 class="fontReady text-sm font-normal">
+                  Ready to Start the
+                  <span class="Bluetx1 fontConversation font-bold"
+                    >Conversation?</span
+                  >
                 </h1>
-                <p class="text-sm modernWay2">
-                  Lorem Ipsum is simply dummy text the printing <br />and typese
-                  Lorem Ipsum has been the <br />
-                  industry's standard dummy
+                <p class="fontPara6">
+                  Lorem Ipsum is simply dummy text the printing and typese Lorem
+                  Ipsum has been the industry's standard dummy
                 </p>
-                <div class="md:mt-8 mt-1">
-                  <a
-                    href="#"
-                    class="text-sm md:text-lg text-purple-500 font-semibold hover:underline flex items-center"
+
+                <button class="bg-white rounded-none py-1 px-1 mt-1">
+                  <div
+                    class="text-black fontRedMBtn flex items-center justify-center gap-2"
                   >
                     Read More
                     <svg
-                      class="md:ml-2 ml-1 md:h-5 h-3 md:w-5 w-3 group-hover:translate-x-1 transition duration-300"
-                      fill="currentColor"
+                      class="h-2"
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
+                      viewBox="0 0 448 512"
                     >
                       <path
-                        d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 000-1.414l-5-5a1 1 0 10-1.414 1.414L13.586 9H4a1 1 0 000 2h9.586l-3.293 3.293a1 1 0 000 1.414z"
-                      ></path>
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
                     </svg>
-                  </a>
-                </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
@@ -914,7 +913,7 @@
 
       <footer class="py-5 flex flex-col items-center justify-around">
         <div
-          class="container flex txSize items-center flex-col md:flex-row md:justify-between gap-2 md:mb-0 mb-2"
+          class="container flex txSize items-center flex-col md:flex-row md:justify-between gap-2 mb-6"
         >
           <div class="flex items-center">
             <a href="#">
