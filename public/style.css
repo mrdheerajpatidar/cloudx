@@ -62,6 +62,112 @@ html {
   font-weight: 900;
   font-style: normal;
 }
+
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: rgb(175,82,222);
+}
+
+/* Button Styles inside nav-menu */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.signup-btn,
+.login-btn {
+  padding: 0.5rem 1rem;
+  
+  /* border-radius: 5px; */
+  text-decoration: none;
+  text-align: center;
+}
+
+.signup-btn {
+  background: rgb(111, 58, 197);
+      background: linear-gradient(90deg, #563692 0%, #7558D8 100%);
+      /* -webkit-background-clip: text; */
+  -webkit-text-fill-color:#FFF;
+}
+
+.login-btn {
+  background-color: #171717;
+  color: #FFF;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.bar {
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+    background-color:rgb(96, 70, 156);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 @media (max-width: 640px) {
   .fontSize12 {
     font-size: 12px; /* Font size for small to medium screens (sm) */
@@ -117,13 +223,27 @@ html {
     width: 53%;
   }
   .txSize6{
-    width: 37%;
+    width: 90%;
   }
   .txSize7{
     width: 58%;
   }
   .HeightImg {
-    height: 30px;
+    height: 34px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    background-color: transparent;
+    color: #fff;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
   .txSize8{
     width: 30%;
@@ -138,22 +258,31 @@ html {
     font-size: 17px;
   }
 .fontRevolution{
-  font-size: 28px;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 700;
 }
 .sizeRevolution{
   width: 85%;
 }
 .sizeRevolutionInner{
-  width: 85%;
+  width: 100%;
 }
 .fontSuper{
-  font-size: 47px;
-  line-height: 58px;
+  font-size: 36px;
+        line-height: 37px;
+  font-weight: 400;
+}
+.fontSuper1{
+  font-size: 34px;
+        line-height: 36px;
+        font-weight: 700;
 }
 .fontIntroducing{
-  font-size: 18px;
-  line-height: 28px;
-  width: 82%;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bababa;
+  width: 100%;
 }
 .fontLLM{
   font-size: 18px;
@@ -223,19 +352,64 @@ html {
   font-weight: 600;
 }
 .fontNvidia{
-  font-size: 33px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 32px;
   font-weight: 500;
   text-align: center;
 }
 .fontGpu{
-  font-size: 32px;
-        line-height: 34px;
+  font-size: 30px;
+  line-height: 33px;
+
   font-weight: 700;
 }
 .fontPara2{
+  font-size: 14px;
+  line-height: 14px;
+}
+.fontFeatures{
   font-size: 15px;
-        line-height: 19px;
+        line-height: 17px;
+  font-weight: 700;
+
+}
+.fontModel{
+  font-size: 30px;
+  line-height: 32px;
+      font-weight: 400;
+}
+.fontModel2{
+  font-size: 30px;
+  line-height: 32px;
+      font-weight: 700;
+}
+.fontPara5{
+  font-size: 13px;
+  line-height: 16px;
+
+
+color: #DADADA;
+}
+.gridSize{
+  width: 70%;
+  
+}
+.gridHeight{
+  height: 138px;
+  
+}
+.fontAchiev{
+  font-size: 15px;
+  line-height: 17px;
+font-weight: 700;
+}
+.fontNumber{
+  font-size: 38px;
+  line-height: 38px;
+}
+.fontProject{
+  font-size: 13px;
+  line-height: 15px;
 }
 }
 
@@ -329,24 +503,7 @@ html {
   .fontDiscover{
     font-size: 17px;
   }
-.fontRevolution{
-  font-size: 28px;
-}
-.sizeRevolution{
-  width: 85%;
-}
-.sizeRevolutionInner{
-  width: 85%;
-}
-.fontSuper{
-  font-size: 47px;
-  line-height: 58px;
-}
-.fontIntroducing{
-  font-size: 18px;
-  line-height: 28px;
-  width: 82%;
-}
+
 .fontLLM{
   font-size: 18px;
   line-height: 28px;
@@ -424,6 +581,22 @@ html {
   }
   }
 @media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    background-color: transparent;
+    color: #fff;
+    
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
   .gradientBorderB {
     border-bottom: 2px solid;
     border-image-source: linear-gradient(45deg, rgba(20, 19, 21, 1)0%, rgba(246, 246, 246, 1)100%);
@@ -560,9 +733,27 @@ html {
       width: 1200px; 
     height: 680px;
     }
-  
-   
- 
+    .gridSize{
+      width: 80%;
+      
+    }
+    .gridHeight{
+      height: 152px;
+      
+    }
+  .fontAchiev{
+    font-size: 23px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+   .fontNumber{
+    font-size: 47px;
+        line-height: 49px;
+   }
+ .fontProject{
+  font-size: 14px;
+        line-height: 20px;
+ }
   
     
  
@@ -617,24 +808,26 @@ html {
     line-height: 50px;
   }
   .fontCore{
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 23px;
+    line-height: 25px;
     font-weight: 700;
   }
   .fontEverything{
-    font-size: 39px;
-    line-height: 51px;
+    font-size: 44px;
+        line-height: 51px;
     font-weight: 400;
   }
   .fontBoosting{
-    font-size: 40px;
+    font-size: 45px;
     line-height: 48px;
+
     font-weight: 700;
     
   }
   .fontPara3{
     font-size: 19px;
-        line-height: 26px;
+    line-height: 23px;
+ color: #DADADA;
         font-weight: 500;
         width: 65%;
         
@@ -646,7 +839,29 @@ html {
   .fontPara4{
     font-size: 17px;
     line-height: 26px;
+    color: #DADADA;
+  }
+  .fontFeatures{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
 
+  }
+  .fontModel{
+    font-size: 62px;
+        line-height: 64px;
+        font-weight: 400;
+  }
+  .fontModel2{
+    font-size: 62px;
+        line-height: 64px;
+        font-weight: 700;
+  }
+  .fontPara5{
+    font-size: 16px;
+    line-height: 22px;
+
+ color: #DADADA;
   }
 }
 @media (min-width: 1240px) {
@@ -743,7 +958,12 @@ html {
 .bgImgHead{
   background-image: url("./images/Navbar/bgImg.png");
   background-repeat: no-repeat;
+  background-size: auto;
+}
+#Home{
+  background-image: url("./images/Navbar/bgImg.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Purpletx{
@@ -761,11 +981,7 @@ color: #743A91;
   .Pera {
     color: #C1C1C1;
 }
-  #Home{
-    background-image: url("./images/Navbar/bgImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
   .bgGradient{
   background: rgb(117,88,216);
   background-image: linear-gradient(90deg, rgba(117,88,216,1) 0%, rgba(175,82,222,1) 100%);
@@ -775,7 +991,7 @@ color: #743A91;
   .bgGradient2{
     background: linear-gradient(to right, #563692 0%, #332056 100%);
     padding: 1.5rem; /* Adjust as needed */
-    border-radius: 0.5rem; /* Adjust as needed */
+   
     color: white;
     text-align: left;
     }
@@ -1010,127 +1226,3 @@ button {
   position: absolute;
   bottom: 0;
 }
-
-  /* Navbar Styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    padding-top: 2rem;
-    background-color: transparent;
-    color: #fff;
-    
-  }
-
-  
-
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .nav-item {
-    list-style: none;
-  }
-
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .nav-link:hover {
-    color: rgb(175,82,222);
-  }
-
-  /* Button Styles inside nav-menu */
-  .nav-buttons {
-    display: flex;
-    gap: 1rem;
-    
-  }
-
-  .signup-btn,
-  .login-btn {
-    padding: 0.5rem 1rem;
-    
-    /* border-radius: 5px; */
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .signup-btn {
-    background: rgb(111, 58, 197);
-        background: linear-gradient(90deg, #563692 0%, #7558D8 100%);
-        /* -webkit-background-clip: text; */
-    -webkit-text-fill-color:#FFF;
-  }
-
-  .login-btn {
-    background-color: #171717;
-    color: #FFF;
-  }
-
-  /* Hamburger Icon Styles */
-  .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .bar {
-    width: 20px;
-    height: 1px;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
-  /* Responsive Styles */
-  @media only screen and (max-width: 768px) {
-    .nav-menu {
-      display: none;
-      position: fixed;
-      top: 5rem;
-      left: 0;
-      width: 100vw;
-      background-color:rgb(96, 70, 156);
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem 0;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-      display: flex;
-    }
-
-    .nav-link {
-      color: #fff;
-    }
-
-    .nav-buttons {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .hamburger {
-      display: flex;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  }
