@@ -4,11 +4,12 @@
   font-family: "Montserrat";
   font-optical-sizing: auto;
   font-weight: 400;
+  
   font-style: normal;
 }
 html {
   scroll-behavior: smooth;
-  font-family: "Montserrat";
+  font-family: "Montserrat,Open Sans,Poppins";
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -98,9 +99,7 @@ html {
 }
 
 
-.marzin{
-  margin-left: auto;
-}
+
 .signup-btn {
   background: rgb(111, 58, 197);
       background: linear-gradient(90deg, #563692 0%, #7558D8 100%);
@@ -470,24 +469,25 @@ font-weight: 700;
   width: 100%;
 }
 .fontReady{
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 11px;
+  line-height: 15px;
   font-weight: 500;
-  width: 45%;
+  width: 52%;
 }
 .fontConversation{
   font-size: 12px;
-  line-height: 12px;
-  font-weight: 500;
+        line-height: 18px;
+        font-weight: 500;
 }
 .fontPara6{
   font-size: 6px;
-  line-height: 7px;
-  font-weight: 400;
-  width: 100px;
+        line-height: 8px;
+        font-weight: 400;
+        width: 105px;
 }
 .fontRedMBtn{
-  font-size: 7px;
+  font-size: 6px;
+  font-weight: 500;
   
     }
   
@@ -601,6 +601,12 @@ font-weight: 700;
     background-color: transparent;
     color: #fff;
     
+  }
+  .marzin{
+    margin-left: auto;
+  }
+  .maxWid{
+    max-width: fit-content;
   }
   .machine{
  
@@ -796,7 +802,8 @@ color: #FFF;
     width: 80%;
   }
   .fontLink{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
   }
   .fontBtn{
     
@@ -808,7 +815,7 @@ color: #FFF;
 
   }
   .fontSign{
-    font-size: 15px;
+    font-size: 13px;
     
     width: fit-content;
     font-weight: 500;

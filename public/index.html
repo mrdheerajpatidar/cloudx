@@ -18,7 +18,7 @@
     <div class="univer">
       <header id="Home">
         <div class="flex flex-col items-center justify-center">
-          <nav class="navbar md:txSize txSizeFull md:mb-6 mb-20 py-10 md:pr-5">
+          <nav class="navbar md:txSize txSizeFull md:mb-32 mb-20 py-10 md:pr-5">
             <a href="#" class="nav-logo txSize11">
               <img
                 class="HeightImg"
@@ -58,15 +58,15 @@
                 >
               </li>
 
-              <div class="nav-buttons marzin">
+              <div class="nav-buttons md:marzin">
                 <a
                   href="#"
-                  class="fontSign signup-btn px-5 py-3 montserrat1 font-semibold"
+                  class="fontSign signup-btn px-3 py-2 md:px-5 md:py-3 montserrat1 font-semibold"
                   >Sign Up</a
                 >
                 <a
                   href="#"
-                  class="login-btn px-5 py-3 montserrat1 fontSign font-semibold"
+                  class="login-btn md:px-5 px-3 py-2 md:py-3 montserrat1 fontSign font-semibold"
                   >Login</a
                 >
               </div>
@@ -461,7 +461,7 @@
               class="container grid md:grid-cols-2 gap-8 md:gap-0 lg:grid-cols-4"
             >
               <div
-                class="flex flex-col items-start justify-center widthMin p-2"
+                class="flex maxWid flex-col items-start justify-center widthMin p-2"
               >
                 <h4 class="font-semibold montserrat3 fontLLM">LLM Inference</h4>
                 <div class="flex items-center gap-3 justify-center">
@@ -472,7 +472,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center widthMin p-2"
+                class="flex maxWid flex-col items-start justify-center widthMin p-2"
               >
                 <h4 class="font-semibold montserrat3 fontLLM">LLM Training</h4>
                 <div class="flex items-center gap-3 justify-center">
@@ -481,7 +481,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center widthMin p-2"
+                class="flex maxWid flex-col items-start justify-center widthMin p-2"
               >
                 <h4 class="font-semibold montserrat3 fontLLM">
                   Energy Efficiency
@@ -492,7 +492,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col items-start justify-center widthMin p-2"
+                class="flex maxWid flex-col items-start justify-center widthMin p-2"
               >
                 <h4 class="font-semibold montserrat3 fontLLM">
                   Energy Efficiency
@@ -882,20 +882,22 @@
           <div class="readyHight">
             <div class="flex items-center justify-end">
               <div class="spacing">
-                <h1 class="fontReady text-sm font-normal mb-4">
+                <h1 class="fontReady text-sm font-normal md:mb-4">
                   Ready to Start the
                   <span class="Purpletx fontConversation font-bold"
                     >Conversation?</span
                   >
                 </h1>
-                <p class="fontPara6 mb-3">
+                <p class="fontPara6 md:mb-3">
                   Lorem Ipsum is simply dummy text the printing and typese Lorem
                   Ipsum has been the industry's standard dummy
                 </p>
 
-                <button class="bg-white rounded-none md:py-3 py-1 md:px-3 px-1">
+                <button
+                  class="bg-white rounded-none mt-0 md:py-3 py-1 md:px-3 px-1"
+                >
                   <div
-                    class="text-black fontRedMBtn flex items-center justify-center gap-2"
+                    class="text-black fontRedMBtn flex items-center justify-center gap-1 md:gap-2"
                   >
                     Read More
                     <svg

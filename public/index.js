@@ -20,7 +20,6 @@ video.addEventListener("click", () => {
     video.removeAttribute("controls");
   }
 });
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -36,3 +35,8 @@ navLinks.forEach((link) =>
     navMenu.classList.remove("active");
   })
 );
+
+window.addEventListener("scroll", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+});
