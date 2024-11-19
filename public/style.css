@@ -978,11 +978,17 @@ color: #FFF;
 .txLlm{
   width: 80%;
 }
+.txSize {
+  width: 87%;
+}
 }
 
 @media (min-width: 1440px) {
   .fontSize10 {
     font-size: 16px;
+  }
+  .txSize {
+    width: 81%;
   }
   .fontSize8 {
     font-size: 22px;
@@ -1020,9 +1026,7 @@ color: #FFF;
   .fontSize30 {
     font-size: 80px;
   }
-  .txSize{
-    width: 90%;
-  }
+  
   .txSize1{
     width: 80%;
   }
